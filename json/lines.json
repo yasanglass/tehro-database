@@ -1,64 +1,64 @@
 [
     {
         "color": "C53642",
-        "hidden": 0,
         "id": 1,
+        "is_branch": 0,
         "name_en": "one",
         "name_fa": "یک"
     },
     {
         "color": "30577F",
-        "hidden": 0,
         "id": 2,
+        "is_branch": 0,
         "name_en": "two",
         "name_fa": "دو"
     },
     {
         "color": "59A7C2",
-        "hidden": 0,
         "id": 3,
+        "is_branch": 0,
         "name_en": "three",
         "name_fa": "سه"
     },
     {
         "color": "E2C21D",
-        "hidden": 0,
         "id": 4,
+        "is_branch": 0,
         "name_en": "four",
         "name_fa": "چهار"
     },
     {
         "color": "1A796B",
-        "hidden": 0,
         "id": 5,
+        "is_branch": 0,
         "name_en": "five",
         "name_fa": "پنج"
     },
     {
         "color": "F677AA",
-        "hidden": 0,
         "id": 6,
+        "is_branch": 0,
         "name_en": "six",
         "name_fa": "شش"
     },
     {
         "color": "7C4078",
-        "hidden": 0,
         "id": 7,
+        "is_branch": 0,
         "name_en": "seven",
         "name_fa": "هفت"
     },
     {
         "color": "C53642",
-        "hidden": 1,
         "id": 101,
+        "is_branch": 1,
         "name_en": "one",
         "name_fa": "یک"
     },
     {
         "color": "E2C21D",
-        "hidden": 1,
         "id": 104,
+        "is_branch": 1,
         "name_en": "four",
         "name_fa": "چهار"
     }

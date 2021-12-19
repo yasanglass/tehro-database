@@ -1,10 +1,10 @@
 [
     {
-        "name": "lines",
-        "seq": 104
-    },
-    {
         "name": "stations",
         "seq": 127
+    },
+    {
+        "name": "lines",
+        "seq": 104
     }
 ]
