@@ -11,10 +11,12 @@ CREATE TABLE IF NOT EXISTS "stations" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"name"	TEXT NOT NULL,
 	"name_fa"	INTEGER NOT NULL,
-	"crossed_line_id"	INTEGER,
+	"interchange_line_id"	INTEGER,
 	"line_id"	INTEGER NOT NULL,
 	"position_in_line"	INTEGER NOT NULL,
-	PRIMARY KEY("id" AUTOINCREMENT)
+	PRIMARY KEY("id" AUTOINCREMENT),
+	FOREIGN KEY("line_id") REFERENCES "lines"("id"),
+	FOREIGN KEY("interchange_line_id") REFERENCES "lines"("id")
 );
 INSERT INTO "lines" VALUES (1,'one','یک','C53642',0);
 INSERT INTO "lines" VALUES (2,'two','دو','30577F',0);
