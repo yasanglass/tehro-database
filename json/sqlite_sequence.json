@@ -1,14 +1,18 @@
 [
     {
-        "name": "lines",
-        "seq": 104
+        "name": "stations",
+        "seq": 127
+    },
+    {
+        "name": "line_types",
+        "seq": 2
     },
     {
         "name": "interchanges",
         "seq": 16
     },
     {
-        "name": "stations",
-        "seq": 127
+        "name": "lines",
+        "seq": 104
     }
 ]
