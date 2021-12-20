@@ -3,7 +3,7 @@
         "id": 1,
         "interchange_id": null,
         "line_id": 101,
-        "name": "Forudgah-e Emam Khomeini",
+        "name_en": "Forudgah-e Emam Khomeini",
         "name_fa": "فرودگاه امام خمینی",
         "position_in_line": 2
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Tajrish",
+        "name_en": "Tajrish",
         "name_fa": "تجریش",
         "position_in_line": 0
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Gheytarie",
+        "name_en": "Gheytarie",
         "name_fa": "قیطریه",
         "position_in_line": 1
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Shahid Sadr",
+        "name_en": "Shahid Sadr",
         "name_fa": "شهید صدر",
         "position_in_line": 2
     },
@@ -35,7 +35,7 @@
         "id": 5,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Gholhak",
+        "name_en": "Gholhak",
         "name_fa": "قلهک",
         "position_in_line": 3
     },
@@ -43,7 +43,7 @@
         "id": 6,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Doctor Shariati",
+        "name_en": "Doctor Shariati",
         "name_fa": "دکتر شریعتی",
         "position_in_line": 4
     },
@@ -51,7 +51,7 @@
         "id": 7,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Mirdamad",
+        "name_en": "Mirdamad",
         "name_fa": "میرداماد",
         "position_in_line": 5
     },
@@ -59,7 +59,7 @@
         "id": 8,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Shahid Haghani",
+        "name_en": "Shahid Haghani",
         "name_fa": "شهید حقانی",
         "position_in_line": 6
     },
@@ -67,7 +67,7 @@
         "id": 9,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Shahid Hemat",
+        "name_en": "Shahid Hemat",
         "name_fa": "شهید همت",
         "position_in_line": 7
     },
@@ -75,7 +75,7 @@
         "id": 10,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Mosalaye Emam Khomeini",
+        "name_en": "Mosalaye Emam Khomeini",
         "name_fa": "مصلای امام خمینی",
         "position_in_line": 8
     },
@@ -83,7 +83,7 @@
         "id": 11,
         "interchange_id": 15,
         "line_id": 1,
-        "name": "Shahid Beheshti",
+        "name_en": "Shahid Beheshti",
         "name_fa": "شهید بهشتی",
         "position_in_line": 9
     },
@@ -91,7 +91,7 @@
         "id": 12,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Shahid Mofateh",
+        "name_en": "Shahid Mofateh",
         "name_fa": "شهید مفتح",
         "position_in_line": 10
     },
@@ -99,7 +99,7 @@
         "id": 13,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Shohadaye Haftom Tir",
+        "name_en": "Shohadaye Haftom Tir",
         "name_fa": "شهدای هفتم تیر",
         "position_in_line": 11
     },
@@ -107,7 +107,7 @@
         "id": 14,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Taleghani",
+        "name_en": "Taleghani",
         "name_fa": "طالقانی",
         "position_in_line": 12
     },
@@ -115,7 +115,7 @@
         "id": 15,
         "interchange_id": 9,
         "line_id": 1,
-        "name": "Darvaze Dolat",
+        "name_en": "Darvaze Dolat",
         "name_fa": "دروازه دولت",
         "position_in_line": 13
     },
@@ -123,7 +123,7 @@
         "id": 16,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Saadi",
+        "name_en": "Saadi",
         "name_fa": "سعدی",
         "position_in_line": 14
     },
@@ -131,7 +131,7 @@
         "id": 17,
         "interchange_id": 13,
         "line_id": 1,
-        "name": "Emam Khomeini",
+        "name_en": "Emam Khomeini",
         "name_fa": "امام خمینی",
         "position_in_line": 15
     },
@@ -139,7 +139,7 @@
         "id": 18,
         "interchange_id": null,
         "line_id": 5,
-        "name": "Golshahr",
+        "name_en": "Golshahr",
         "name_fa": "گلشهر",
         "position_in_line": 10
     },
@@ -147,7 +147,7 @@
         "id": 19,
         "interchange_id": null,
         "line_id": 5,
-        "name": "Mohammad Shahr",
+        "name_en": "Mohammad Shahr",
         "name_fa": "محمدشهر",
         "position_in_line": 9
     },
@@ -155,7 +155,7 @@
         "id": 20,
         "interchange_id": null,
         "line_id": 5,
-        "name": "Karaj",
+        "name_en": "Karaj",
         "name_fa": "کرج",
         "position_in_line": 8
     },
@@ -163,7 +163,7 @@
         "id": 21,
         "interchange_id": null,
         "line_id": 5,
-        "name": "Atmosfer",
+        "name_en": "Atmosfer",
         "name_fa": "اتمسفر",
         "position_in_line": 7
     },
@@ -171,7 +171,7 @@
         "id": 22,
         "interchange_id": null,
         "line_id": 5,
-        "name": "Garmdareh",
+        "name_en": "Garmdareh",
         "name_fa": "گرم‌دره",
         "position_in_line": 6
     },
@@ -179,7 +179,7 @@
         "id": 23,
         "interchange_id": null,
         "line_id": 5,
-        "name": "Vardavard",
+        "name_en": "Vardavard",
         "name_fa": "وردآورد",
         "position_in_line": 5
     },
@@ -187,7 +187,7 @@
         "id": 24,
         "interchange_id": null,
         "line_id": 5,
-        "name": "Iran Khordo",
+        "name_en": "Iran Khordo",
         "name_fa": "ایران خودرو",
         "position_in_line": 4
     },
@@ -195,7 +195,7 @@
         "id": 25,
         "interchange_id": null,
         "line_id": 5,
-        "name": "Varzeshgah-e Azadi",
+        "name_en": "Varzeshgah-e Azadi",
         "name_fa": "ورزشگاه آزادی",
         "position_in_line": 2
     },
@@ -203,7 +203,7 @@
         "id": 26,
         "interchange_id": 14,
         "line_id": 5,
-        "name": "Eram-e Sabz",
+        "name_en": "Eram-e Sabz",
         "name_fa": "ارم سبز",
         "position_in_line": 1
     },
@@ -211,7 +211,7 @@
         "id": 27,
         "interchange_id": 16,
         "line_id": 5,
-        "name": "Tehran (Sadeghieh)",
+        "name_en": "Tehran (Sadeghieh)",
         "name_fa": "تهران (صادقیه)",
         "position_in_line": 0
     },
@@ -219,7 +219,7 @@
         "id": 28,
         "interchange_id": 11,
         "line_id": 6,
-        "name": "Emam Hossein",
+        "name_en": "Emam Hossein",
         "name_fa": "امام حسین",
         "position_in_line": 0
     },
@@ -227,7 +227,7 @@
         "id": 29,
         "interchange_id": 7,
         "line_id": 6,
-        "name": "Meydan-e Shohada",
+        "name_en": "Meydan-e Shohada",
         "name_fa": "میدان شهدا",
         "position_in_line": 1
     },
@@ -235,7 +235,7 @@
         "id": 30,
         "interchange_id": null,
         "line_id": 6,
-        "name": "Besat",
+        "name_en": "Besat",
         "name_fa": "بعثت",
         "position_in_line": 2
     },
@@ -243,7 +243,7 @@
         "id": 31,
         "interchange_id": null,
         "line_id": 6,
-        "name": "Dolat Abad",
+        "name_en": "Dolat Abad",
         "name_fa": "دولت‌آباد",
         "position_in_line": 3
     },
@@ -251,7 +251,7 @@
         "id": 32,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Panzdah-e Khordad",
+        "name_en": "Panzdah-e Khordad",
         "name_fa": "پانزده خرداد",
         "position_in_line": 16
     },
@@ -259,7 +259,7 @@
         "id": 33,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Khayam",
+        "name_en": "Khayam",
         "name_fa": "خیام",
         "position_in_line": 17
     },
@@ -267,7 +267,7 @@
         "id": 34,
         "interchange_id": 3,
         "line_id": 1,
-        "name": "Meydan-e Mohammadiyeh",
+        "name_en": "Meydan-e Mohammadiyeh",
         "name_fa": "میدان محمدیه",
         "position_in_line": 18
     },
@@ -275,7 +275,7 @@
         "id": 35,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Shoosh",
+        "name_en": "Shoosh",
         "name_fa": "شوش",
         "position_in_line": 19
     },
@@ -283,7 +283,7 @@
         "id": 36,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Payane Jonub",
+        "name_en": "Payane Jonub",
         "name_fa": "پایانهٔ جنوب",
         "position_in_line": 20
     },
@@ -291,7 +291,7 @@
         "id": 37,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Shahid Bokharaei",
+        "name_en": "Shahid Bokharaei",
         "name_fa": "شهید بخارایی",
         "position_in_line": 21
     },
@@ -299,7 +299,7 @@
         "id": 38,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Ali Abad",
+        "name_en": "Ali Abad",
         "name_fa": "علی‌آباد",
         "position_in_line": 22
     },
@@ -307,7 +307,7 @@
         "id": 39,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Javanmard-e Ghasab",
+        "name_en": "Javanmard-e Ghasab",
         "name_fa": "جوانمرد قصاب",
         "position_in_line": 23
     },
@@ -315,7 +315,7 @@
         "id": 40,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Shahr-e Rey",
+        "name_en": "Shahr-e Rey",
         "name_fa": "شهرری",
         "position_in_line": 24
     },
@@ -323,7 +323,7 @@
         "id": 41,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Palayeshgah",
+        "name_en": "Palayeshgah",
         "name_fa": "پالایشگاه",
         "position_in_line": 25
     },
@@ -331,7 +331,7 @@
         "id": 42,
         "interchange_id": 1,
         "line_id": 1,
-        "name": "Shahed-Bagher Shahr",
+        "name_en": "Shahed-Bagher Shahr",
         "name_fa": "شاهد–باقرشهر",
         "position_in_line": 26
     },
@@ -339,7 +339,7 @@
         "id": 43,
         "interchange_id": null,
         "line_id": 1,
-        "name": "haramme Motahar-e Emam Khomeini",
+        "name_en": "haramme Motahar-e Emam Khomeini",
         "name_fa": "حرم مطهر امام خمینی",
         "position_in_line": 27
     },
@@ -347,7 +347,7 @@
         "id": 44,
         "interchange_id": null,
         "line_id": 1,
-        "name": "Kahrizak",
+        "name_en": "Kahrizak",
         "name_fa": "کهریزک",
         "position_in_line": 28
     },
@@ -355,7 +355,7 @@
         "id": 45,
         "interchange_id": 16,
         "line_id": 2,
-        "name": "Tehran (Sadeghieh)",
+        "name_en": "Tehran (Sadeghieh)",
         "name_fa": "تهران (صادقیه)",
         "position_in_line": 0
     },
@@ -363,7 +363,7 @@
         "id": 46,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Tarasht",
+        "name_en": "Tarasht",
         "name_fa": "طرشت",
         "position_in_line": 1
     },
@@ -371,7 +371,7 @@
         "id": 47,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Daneshgah-e Sharif",
+        "name_en": "Daneshgah-e Sharif",
         "name_fa": "دانشگاه شریف",
         "position_in_line": 2
     },
@@ -379,7 +379,7 @@
         "id": 48,
         "interchange_id": 12,
         "line_id": 2,
-        "name": "Shadman",
+        "name_en": "Shadman",
         "name_fa": "شادمان",
         "position_in_line": 3
     },
@@ -387,7 +387,7 @@
         "id": 49,
         "interchange_id": 5,
         "line_id": 2,
-        "name": "Shahid Navab-e Safavi",
+        "name_en": "Shahid Navab-e Safavi",
         "name_fa": "شهید نواب صفوی",
         "position_in_line": 4
     },
@@ -395,7 +395,7 @@
         "id": 50,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Meydan-e Hor",
+        "name_en": "Meydan-e Hor",
         "name_fa": "میدان حر",
         "position_in_line": 5
     },
@@ -403,7 +403,7 @@
         "id": 51,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Daneshgah-e Emam Ali",
+        "name_en": "Daneshgah-e Emam Ali",
         "name_fa": "دانشگاه امام علی",
         "position_in_line": 6
     },
@@ -411,7 +411,7 @@
         "id": 52,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Hassan Abad",
+        "name_en": "Hassan Abad",
         "name_fa": "حسن‌آباد",
         "position_in_line": 7
     },
@@ -419,7 +419,7 @@
         "id": 53,
         "interchange_id": 13,
         "line_id": 2,
-        "name": "Emam Khomeini",
+        "name_en": "Emam Khomeini",
         "name_fa": "امام خمینی",
         "position_in_line": 8
     },
@@ -427,7 +427,7 @@
         "id": 54,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Mellat",
+        "name_en": "Mellat",
         "name_fa": "ملت",
         "position_in_line": 9
     },
@@ -435,7 +435,7 @@
         "id": 55,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Baharaestan",
+        "name_en": "Baharaestan",
         "name_fa": "بهارستان",
         "position_in_line": 10
     },
@@ -443,7 +443,7 @@
         "id": 56,
         "interchange_id": 8,
         "line_id": 2,
-        "name": "Darvaze Shemiran",
+        "name_en": "Darvaze Shemiran",
         "name_fa": "دروازه شمیران",
         "position_in_line": 11
     },
@@ -451,7 +451,7 @@
         "id": 57,
         "interchange_id": 11,
         "line_id": 2,
-        "name": "Emam Hossein",
+        "name_en": "Emam Hossein",
         "name_fa": "امام حسین",
         "position_in_line": 12
     },
@@ -459,7 +459,7 @@
         "id": 58,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Shahid Madani",
+        "name_en": "Shahid Madani",
         "name_fa": "شهید مدنی",
         "position_in_line": 13
     },
@@ -467,7 +467,7 @@
         "id": 59,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Sabalan",
+        "name_en": "Sabalan",
         "name_fa": "سبلان",
         "position_in_line": 14
     },
@@ -475,7 +475,7 @@
         "id": 60,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Fadak",
+        "name_en": "Fadak",
         "name_fa": "فدک",
         "position_in_line": 15
     },
@@ -483,7 +483,7 @@
         "id": 61,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Janbazan",
+        "name_en": "Janbazan",
         "name_fa": "جانبازان",
         "position_in_line": 16
     },
@@ -491,7 +491,7 @@
         "id": 62,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Sarsabz",
+        "name_en": "Sarsabz",
         "name_fa": "سرسبز",
         "position_in_line": 17
     },
@@ -499,7 +499,7 @@
         "id": 63,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Daneshgah-e Elm-o Sanat",
+        "name_en": "Daneshgah-e Elm-o Sanat",
         "name_fa": "دانشگاه علم و صنعت",
         "position_in_line": 18
     },
@@ -507,7 +507,7 @@
         "id": 64,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Shahid Bagheri",
+        "name_en": "Shahid Bagheri",
         "name_fa": "شهید باقری",
         "position_in_line": 19
     },
@@ -515,7 +515,7 @@
         "id": 65,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Azadegan",
+        "name_en": "Azadegan",
         "name_fa": "آزادگان",
         "position_in_line": 0
     },
@@ -523,7 +523,7 @@
         "id": 66,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Nemat Abad",
+        "name_en": "Nemat Abad",
         "name_fa": "نعمت‌آباد",
         "position_in_line": 1
     },
@@ -531,7 +531,7 @@
         "id": 67,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Abdol Abad",
+        "name_en": "Abdol Abad",
         "name_fa": "عبدل‌آباد",
         "position_in_line": 2
     },
@@ -539,7 +539,7 @@
         "id": 68,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Shahrak-e Shariati",
+        "name_en": "Shahrak-e Shariati",
         "name_fa": "شهرک شریعتی",
         "position_in_line": 3
     },
@@ -547,7 +547,7 @@
         "id": 69,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Zamzam",
+        "name_en": "Zamzam",
         "name_fa": "زمزم",
         "position_in_line": 4
     },
@@ -555,7 +555,7 @@
         "id": 70,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Javadieh",
+        "name_en": "Javadieh",
         "name_fa": "جوادیه",
         "position_in_line": 5
     },
@@ -563,7 +563,7 @@
         "id": 71,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Rah Ahan",
+        "name_en": "Rah Ahan",
         "name_fa": "راه‌آهن",
         "position_in_line": 6
     },
@@ -571,7 +571,7 @@
         "id": 72,
         "interchange_id": 4,
         "line_id": 3,
-        "name": "Mahdiyeh",
+        "name_en": "Mahdiyeh",
         "name_fa": "مهدیه",
         "position_in_line": 7
     },
@@ -579,7 +579,7 @@
         "id": 73,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Moniriyeh",
+        "name_en": "Moniriyeh",
         "name_fa": "منیریه",
         "position_in_line": 8
     },
@@ -587,7 +587,7 @@
         "id": 74,
         "interchange_id": 10,
         "line_id": 3,
-        "name": "Taatr-e Shahr",
+        "name_en": "Taatr-e Shahr",
         "name_fa": "تئاتر شهر",
         "position_in_line": 9
     },
@@ -595,7 +595,7 @@
         "id": 75,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Meydan-e Hazrat-e Valiasr",
+        "name_en": "Meydan-e Hazrat-e Valiasr",
         "name_fa": "میدان حضرت ولی‌عصر",
         "position_in_line": 10
     },
@@ -603,7 +603,7 @@
         "id": 76,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Meydan-e Jahad",
+        "name_en": "Meydan-e Jahad",
         "name_fa": "میدان جهاد",
         "position_in_line": 11
     },
@@ -611,7 +611,7 @@
         "id": 77,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Mirza-ye Shirazi",
+        "name_en": "Mirza-ye Shirazi",
         "name_fa": "میرزای شیرازی",
         "position_in_line": 12
     },
@@ -619,7 +619,7 @@
         "id": 78,
         "interchange_id": 15,
         "line_id": 3,
-        "name": "Shahid Beheshti",
+        "name_en": "Shahid Beheshti",
         "name_fa": "شهید بهشتی",
         "position_in_line": 13
     },
@@ -627,7 +627,7 @@
         "id": 79,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Sohrevardi",
+        "name_en": "Sohrevardi",
         "name_fa": "سهروردی",
         "position_in_line": 14
     },
@@ -635,7 +635,7 @@
         "id": 80,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Shahid Ghodusi",
+        "name_en": "Shahid Ghodusi",
         "name_fa": "شهید قدوسی",
         "position_in_line": 15
     },
@@ -643,7 +643,7 @@
         "id": 81,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Shahid Sayyad-e Shirazi",
+        "name_en": "Shahid Sayyad-e Shirazi",
         "name_fa": "شهید صیاد شیرازی",
         "position_in_line": 16
     },
@@ -651,7 +651,7 @@
         "id": 82,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Khajeh Abdollah-e Ansari",
+        "name_en": "Khajeh Abdollah-e Ansari",
         "name_fa": "خواجه عبدالله انصاری",
         "position_in_line": 17
     },
@@ -659,7 +659,7 @@
         "id": 83,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Shahid Zeynoddin",
+        "name_en": "Shahid Zeynoddin",
         "name_fa": "شهید زین‌الدین",
         "position_in_line": 18
     },
@@ -667,7 +667,7 @@
         "id": 84,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Meydan-e Horrvey",
+        "name_en": "Meydan-e Horrvey",
         "name_fa": "میدان هروی",
         "position_in_line": 19
     },
@@ -675,7 +675,7 @@
         "id": 85,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Hossein Abad",
+        "name_en": "Hossein Abad",
         "name_fa": "حسین‌آباد",
         "position_in_line": 20
     },
@@ -683,7 +683,7 @@
         "id": 86,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Nobonyad",
+        "name_en": "Nobonyad",
         "name_fa": "نوبنیاد",
         "position_in_line": 21
     },
@@ -691,7 +691,7 @@
         "id": 87,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Shahid Mahalati",
+        "name_en": "Shahid Mahalati",
         "name_fa": "شهید محلاتی",
         "position_in_line": 22
     },
@@ -699,7 +699,7 @@
         "id": 88,
         "interchange_id": null,
         "line_id": 3,
-        "name": "Ghaem",
+        "name_en": "Ghaem",
         "name_fa": "قائم",
         "position_in_line": 23
     },
@@ -707,7 +707,7 @@
         "id": 89,
         "interchange_id": 14,
         "line_id": 4,
-        "name": "Eram-e Sabz",
+        "name_en": "Eram-e Sabz",
         "name_fa": "ارم سبز",
         "position_in_line": 18
     },
@@ -715,7 +715,7 @@
         "id": 90,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Shahrak-e Ekbatan",
+        "name_en": "Shahrak-e Ekbatan",
         "name_fa": "شهرک اکباتان",
         "position_in_line": 17
     },
@@ -723,7 +723,7 @@
         "id": 91,
         "interchange_id": 2,
         "line_id": 4,
-        "name": "Bime",
+        "name_en": "Bime",
         "name_fa": "بیمه",
         "position_in_line": 16
     },
@@ -731,7 +731,7 @@
         "id": 92,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Meydan-e Azadi",
+        "name_en": "Meydan-e Azadi",
         "name_fa": "میدان آزادی",
         "position_in_line": 15
     },
@@ -739,7 +739,7 @@
         "id": 93,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Ostad Moein",
+        "name_en": "Ostad Moein",
         "name_fa": "استاد معین",
         "position_in_line": 14
     },
@@ -747,7 +747,7 @@
         "id": 94,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Doctor Habibollah",
+        "name_en": "Doctor Habibollah",
         "name_fa": "دکتر حبیب‌الله",
         "position_in_line": 13
     },
@@ -755,7 +755,7 @@
         "id": 95,
         "interchange_id": 12,
         "line_id": 4,
-        "name": "Shadman",
+        "name_en": "Shadman",
         "name_fa": "شادمان",
         "position_in_line": 12
     },
@@ -763,7 +763,7 @@
         "id": 96,
         "interchange_id": 6,
         "line_id": 4,
-        "name": "Tohid",
+        "name_en": "Tohid",
         "name_fa": "توحید",
         "position_in_line": 11
     },
@@ -771,7 +771,7 @@
         "id": 97,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Meydan-e Enghelab-e Eslami",
+        "name_en": "Meydan-e Enghelab-e Eslami",
         "name_fa": "میدان انقلاب اسلامی",
         "position_in_line": 10
     },
@@ -779,7 +779,7 @@
         "id": 98,
         "interchange_id": 10,
         "line_id": 4,
-        "name": "Taatr-e Shahr",
+        "name_en": "Taatr-e Shahr",
         "name_fa": "تئاتر شهر",
         "position_in_line": 9
     },
@@ -787,7 +787,7 @@
         "id": 99,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Ferdowsi",
+        "name_en": "Ferdowsi",
         "name_fa": "فردوسی",
         "position_in_line": 8
     },
@@ -795,7 +795,7 @@
         "id": 100,
         "interchange_id": 9,
         "line_id": 4,
-        "name": "Darvaze Dolat",
+        "name_en": "Darvaze Dolat",
         "name_fa": "دروازه دولت",
         "position_in_line": 7
     },
@@ -803,7 +803,7 @@
         "id": 101,
         "interchange_id": 8,
         "line_id": 4,
-        "name": "Darvaze Shemiran",
+        "name_en": "Darvaze Shemiran",
         "name_fa": "دروازه شمیران",
         "position_in_line": 6
     },
@@ -811,7 +811,7 @@
         "id": 102,
         "interchange_id": 7,
         "line_id": 4,
-        "name": "Meydan-e Shohada",
+        "name_en": "Meydan-e Shohada",
         "name_fa": "میدان شهدا",
         "position_in_line": 5
     },
@@ -819,7 +819,7 @@
         "id": 103,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Ebn-e Sina",
+        "name_en": "Ebn-e Sina",
         "name_fa": "ابن سینا",
         "position_in_line": 4
     },
@@ -827,7 +827,7 @@
         "id": 104,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Pirouzi",
+        "name_en": "Pirouzi",
         "name_fa": "پیروزی",
         "position_in_line": 3
     },
@@ -835,7 +835,7 @@
         "id": 105,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Nabard",
+        "name_en": "Nabard",
         "name_fa": "نبرد",
         "position_in_line": 2
     },
@@ -843,7 +843,7 @@
         "id": 106,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Nirou Havaei",
+        "name_en": "Nirou Havaei",
         "name_fa": "نیروهوایی",
         "position_in_line": 1
     },
@@ -851,7 +851,7 @@
         "id": 107,
         "interchange_id": null,
         "line_id": 4,
-        "name": "Shahid Kolahdouz",
+        "name_en": "Shahid Kolahdouz",
         "name_fa": "شهید کلاهدوز",
         "position_in_line": 0
     },
@@ -859,7 +859,7 @@
         "id": 108,
         "interchange_id": null,
         "line_id": 7,
-        "name": "Meydan-e Sanat",
+        "name_en": "Meydan-e Sanat",
         "name_fa": "میدان صنعت",
         "position_in_line": 0
     },
@@ -867,7 +867,7 @@
         "id": 109,
         "interchange_id": null,
         "line_id": 7,
-        "name": "Daneshgaheh-e Tarbiat Modares",
+        "name_en": "Daneshgaheh-e Tarbiat Modares",
         "name_fa": "دانشگاه تربیت مدرس",
         "position_in_line": 1
     },
@@ -875,7 +875,7 @@
         "id": 110,
         "interchange_id": 6,
         "line_id": 7,
-        "name": "Tohid",
+        "name_en": "Tohid",
         "name_fa": "توحید",
         "position_in_line": 2
     },
@@ -883,7 +883,7 @@
         "id": 111,
         "interchange_id": 5,
         "line_id": 7,
-        "name": "Shahid Navab-e Safavi",
+        "name_en": "Shahid Navab-e Safavi",
         "name_fa": "شهید نواب صفوی",
         "position_in_line": 3
     },
@@ -891,7 +891,7 @@
         "id": 112,
         "interchange_id": null,
         "line_id": 7,
-        "name": "Roudaki",
+        "name_en": "Roudaki",
         "name_fa": "رودکی",
         "position_in_line": 4
     },
@@ -899,7 +899,7 @@
         "id": 113,
         "interchange_id": null,
         "line_id": 7,
-        "name": "Komeyl",
+        "name_en": "Komeyl",
         "name_fa": "کمیل",
         "position_in_line": 5
     },
@@ -907,7 +907,7 @@
         "id": 114,
         "interchange_id": null,
         "line_id": 7,
-        "name": "Beryanak",
+        "name_en": "Beryanak",
         "name_fa": "بریانک",
         "position_in_line": 6
     },
@@ -915,7 +915,7 @@
         "id": 115,
         "interchange_id": null,
         "line_id": 7,
-        "name": "Helal Ahmar",
+        "name_en": "Helal Ahmar",
         "name_fa": "هلال احمر",
         "position_in_line": 7
     },
@@ -923,7 +923,7 @@
         "id": 116,
         "interchange_id": 4,
         "line_id": 7,
-        "name": "Mahdiyeh",
+        "name_en": "Mahdiyeh",
         "name_fa": "مهدیه",
         "position_in_line": 8
     },
@@ -931,7 +931,7 @@
         "id": 117,
         "interchange_id": 3,
         "line_id": 7,
-        "name": "Meydan-e Mohammadiyeh",
+        "name_en": "Meydan-e Mohammadiyeh",
         "name_fa": "میدان محمدیه",
         "position_in_line": 9
     },
@@ -939,7 +939,7 @@
         "id": 118,
         "interchange_id": null,
         "line_id": 7,
-        "name": "Molavi",
+        "name_en": "Molavi",
         "name_fa": "مولوی",
         "position_in_line": 10
     },
@@ -947,7 +947,7 @@
         "id": 119,
         "interchange_id": null,
         "line_id": 7,
-        "name": "Basij",
+        "name_en": "Basij",
         "name_fa": "بسیج",
         "position_in_line": 11
     },
@@ -955,7 +955,7 @@
         "id": 120,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Tehranpars",
+        "name_en": "Tehranpars",
         "name_fa": "تهرانپارس",
         "position_in_line": 20
     },
@@ -963,7 +963,7 @@
         "id": 121,
         "interchange_id": null,
         "line_id": 2,
-        "name": "Farhangsara",
+        "name_en": "Farhangsara",
         "name_fa": "فرهنگسرا",
         "position_in_line": 21
     },
@@ -971,7 +971,7 @@
         "id": 122,
         "interchange_id": null,
         "line_id": 104,
-        "name": "Payane 1 va 2 Forudgah-e Mehr-Abad",
+        "name_en": "Payane 1 va 2 Forudgah-e Mehr-Abad",
         "name_fa": "پایانهٔ ۱ و ۲ فرودگاه مهرآباد",
         "position_in_line": 1
     },
@@ -979,7 +979,7 @@
         "id": 123,
         "interchange_id": null,
         "line_id": 104,
-        "name": "Payane 4 va 6 Forudgah-e Mehr-Abad",
+        "name_en": "Payane 4 va 6 Forudgah-e Mehr-Abad",
         "name_fa": "پایانهٔ ۴ و ۶ فرودگاه مهرآباد",
         "position_in_line": 2
     },
@@ -987,7 +987,7 @@
         "id": 124,
         "interchange_id": null,
         "line_id": 101,
-        "name": "Namayeshgah-e Shahr-e Aftab",
+        "name_en": "Namayeshgah-e Shahr-e Aftab",
         "name_fa": "نمایشگاه شهر آفتاب",
         "position_in_line": 1
     },
@@ -995,7 +995,7 @@
         "id": 125,
         "interchange_id": null,
         "line_id": 5,
-        "name": "Chitgar",
+        "name_en": "Chitgar",
         "name_fa": "چیتگر",
         "position_in_line": 3
     },
@@ -1003,7 +1003,7 @@
         "id": 126,
         "interchange_id": 2,
         "line_id": 104,
-        "name": "Bime",
+        "name_en": "Bime",
         "name_fa": "بیمه",
         "position_in_line": 0
     },
@@ -1011,7 +1011,7 @@
         "id": 127,
         "interchange_id": 1,
         "line_id": 101,
-        "name": "Shahed-Bagher Shahr",
+        "name_en": "Shahed-Bagher Shahr",
         "name_fa": "شاهد–باقرشهر",
         "position_in_line": 0
     }

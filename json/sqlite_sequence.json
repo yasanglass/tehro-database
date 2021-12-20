@@ -1,9 +1,5 @@
 [
     {
-        "name": "stations",
-        "seq": 127
-    },
-    {
         "name": "line_types",
         "seq": 2
     },
@@ -14,5 +10,9 @@
     {
         "name": "lines",
         "seq": 104
+    },
+    {
+        "name": "stations",
+        "seq": 127
     }
 ]
