@@ -6,8 +6,8 @@ CREATE TABLE IF NOT EXISTS "stations" (
 	"line_id"	INTEGER NOT NULL,
 	"position_in_line"	INTEGER NOT NULL,
 	"interchange_id"	INTEGER,
-	PRIMARY KEY("id" AUTOINCREMENT),
-	FOREIGN KEY("line_id") REFERENCES "lines"("id")
+	FOREIGN KEY("line_id") REFERENCES "lines"("id"),
+	PRIMARY KEY("id" AUTOINCREMENT)
 );
 CREATE TABLE IF NOT EXISTS "line_types" (
 	"id"	INTEGER NOT NULL UNIQUE,
@@ -18,8 +18,8 @@ CREATE TABLE IF NOT EXISTS "interchanges" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"station_a"	INTEGER NOT NULL UNIQUE,
 	"station_b"	INTEGER NOT NULL UNIQUE,
-	PRIMARY KEY("id" AUTOINCREMENT),
-	FOREIGN KEY("station_a") REFERENCES "stations"("id")
+	FOREIGN KEY("station_a") REFERENCES "stations"("id"),
+	PRIMARY KEY("id" AUTOINCREMENT)
 );
 CREATE TABLE IF NOT EXISTS "lines" (
 	"id"	INTEGER NOT NULL UNIQUE,
@@ -28,6 +28,11 @@ CREATE TABLE IF NOT EXISTS "lines" (
 	"color"	TEXT,
 	"type"	INTEGER NOT NULL DEFAULT 1,
 	PRIMARY KEY("id" AUTOINCREMENT)
+);
+CREATE TABLE IF NOT EXISTS "information" (
+	"last_modified_year"	INTEGER NOT NULL UNIQUE,
+	"last_modified_month"	INTEGER NOT NULL UNIQUE,
+	"last_modified_day"	INTEGER NOT NULL UNIQUE
 );
 INSERT INTO "stations" VALUES (1,'Forudgah-e Emam Khomeini','فرودگاه امام خمینی',101,2,NULL);
 INSERT INTO "stations" VALUES (2,'Tajrish','تجریش',1,0,NULL);
@@ -183,4 +188,5 @@ INSERT INTO "lines" VALUES (6,'six','شش','F677AA',1);
 INSERT INTO "lines" VALUES (7,'seven','هفت','7C4078',1);
 INSERT INTO "lines" VALUES (101,'one','یک','C53642',2);
 INSERT INTO "lines" VALUES (104,'four','چهار','E2C21D',2);
+INSERT INTO "information" VALUES (2021,12,20);
 COMMIT;
