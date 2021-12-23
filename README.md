@@ -5,4 +5,6 @@ Tehran Metro database used in [Tehro Android app](https://github.com/yasandev/te
 Since .db database files are binary and their diff is not visible in commits, all database changes are always also reflected on the SQL & JSON exports of the database file.
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. All your changes MUST be reflected on all three variants of the database (db, json & SQL). 
+
+For major changes, please open an issue first to discuss what you would like to change.
