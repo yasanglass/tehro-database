@@ -14,9 +14,5 @@
     {
         "name": "stations",
         "seq": 127
-    },
-    {
-        "name": "information",
-        "seq": 1
     }
 ]
