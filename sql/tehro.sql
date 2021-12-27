@@ -1,17 +1,4 @@
 BEGIN TRANSACTION;
-CREATE TABLE IF NOT EXISTS "information" (
-	"last_modified_year"	INTEGER NOT NULL UNIQUE,
-	"last_modified_month"	INTEGER NOT NULL UNIQUE,
-	"last_modified_day"	INTEGER NOT NULL UNIQUE
-);
-CREATE TABLE IF NOT EXISTS "interchanges" (
-	"id"	INTEGER NOT NULL UNIQUE,
-	"station_a"	INTEGER NOT NULL UNIQUE,
-	"station_b"	INTEGER NOT NULL UNIQUE,
-	PRIMARY KEY("id" AUTOINCREMENT),
-	FOREIGN KEY("station_a") REFERENCES "stations"("id"),
-	FOREIGN KEY("station_b") REFERENCES "stations"("id")
-);
 CREATE TABLE IF NOT EXISTS "line_types" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"name"	TEXT NOT NULL UNIQUE,
@@ -25,6 +12,14 @@ CREATE TABLE IF NOT EXISTS "lines" (
 	"type"	INTEGER NOT NULL DEFAULT 1,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
+CREATE TABLE IF NOT EXISTS "interchanges" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"station_a"	INTEGER NOT NULL UNIQUE,
+	"station_b"	INTEGER NOT NULL UNIQUE,
+	PRIMARY KEY("id" AUTOINCREMENT),
+	FOREIGN KEY("station_a") REFERENCES "stations"("id"),
+	FOREIGN KEY("station_b") REFERENCES "stations"("id")
+);
 CREATE TABLE IF NOT EXISTS "stations" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"name_en"	TEXT NOT NULL,
@@ -32,11 +27,28 @@ CREATE TABLE IF NOT EXISTS "stations" (
 	"line_id"	INTEGER NOT NULL,
 	"position_in_line"	INTEGER NOT NULL,
 	"interchange_id"	INTEGER,
+	PRIMARY KEY("id" AUTOINCREMENT),
 	FOREIGN KEY("line_id") REFERENCES "lines"("id"),
-	FOREIGN KEY("interchange_id") REFERENCES "interchanges"("id"),
+	FOREIGN KEY("interchange_id") REFERENCES "interchanges"("id")
+);
+CREATE TABLE IF NOT EXISTS "information" (
+	"id"	INTEGER NOT NULL DEFAULT 1 UNIQUE,
+	"last_modified_year"	INTEGER NOT NULL UNIQUE,
+	"last_modified_month"	INTEGER NOT NULL UNIQUE,
+	"last_modified_day"	INTEGER NOT NULL UNIQUE,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
-INSERT INTO "information" VALUES (2021,12,27);
+INSERT INTO "line_types" VALUES (1,'Metro Line');
+INSERT INTO "line_types" VALUES (2,'Metro Branch');
+INSERT INTO "lines" VALUES (1,'one','یک','C53642',1);
+INSERT INTO "lines" VALUES (2,'two','دو','30577F',1);
+INSERT INTO "lines" VALUES (3,'three','سه','59A7C2',1);
+INSERT INTO "lines" VALUES (4,'four','چهار','E2C21D',1);
+INSERT INTO "lines" VALUES (5,'five','پنج','1A796B',1);
+INSERT INTO "lines" VALUES (6,'six','شش','F677AA',1);
+INSERT INTO "lines" VALUES (7,'seven','هفت','7C4078',1);
+INSERT INTO "lines" VALUES (101,'one','یک','C53642',2);
+INSERT INTO "lines" VALUES (104,'four','چهار','E2C21D',2);
 INSERT INTO "interchanges" VALUES (1,42,127);
 INSERT INTO "interchanges" VALUES (2,91,126);
 INSERT INTO "interchanges" VALUES (3,34,117);
@@ -53,17 +65,6 @@ INSERT INTO "interchanges" VALUES (13,17,53);
 INSERT INTO "interchanges" VALUES (14,26,89);
 INSERT INTO "interchanges" VALUES (15,11,78);
 INSERT INTO "interchanges" VALUES (16,27,45);
-INSERT INTO "line_types" VALUES (1,'Metro Line');
-INSERT INTO "line_types" VALUES (2,'Metro Branch');
-INSERT INTO "lines" VALUES (1,'one','یک','C53642',1);
-INSERT INTO "lines" VALUES (2,'two','دو','30577F',1);
-INSERT INTO "lines" VALUES (3,'three','سه','59A7C2',1);
-INSERT INTO "lines" VALUES (4,'four','چهار','E2C21D',1);
-INSERT INTO "lines" VALUES (5,'five','پنج','1A796B',1);
-INSERT INTO "lines" VALUES (6,'six','شش','F677AA',1);
-INSERT INTO "lines" VALUES (7,'seven','هفت','7C4078',1);
-INSERT INTO "lines" VALUES (101,'one','یک','C53642',2);
-INSERT INTO "lines" VALUES (104,'four','چهار','E2C21D',2);
 INSERT INTO "stations" VALUES (1,'Forudgah-e Emam Khomeini','فرودگاه امام خمینی',101,2,NULL);
 INSERT INTO "stations" VALUES (2,'Tajrish','تجریش',1,0,NULL);
 INSERT INTO "stations" VALUES (3,'Gheytarie','قیطریه',1,1,NULL);
@@ -191,4 +192,5 @@ INSERT INTO "stations" VALUES (124,'Namayeshgah-e Shahr-e Aftab','نمایشگا
 INSERT INTO "stations" VALUES (125,'Chitgar','چیتگر',5,3,NULL);
 INSERT INTO "stations" VALUES (126,'Bime','بیمه',104,0,2);
 INSERT INTO "stations" VALUES (127,'Shahed-Bagher Shahr','شاهد–باقرشهر',101,0,1);
+INSERT INTO "information" VALUES (1,2021,12,21);
 COMMIT;
