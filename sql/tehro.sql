@@ -1,4 +1,19 @@
 BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "information" (
+	"id"	INTEGER NOT NULL DEFAULT 1 UNIQUE,
+	"last_modified_year"	INTEGER NOT NULL UNIQUE,
+	"last_modified_month"	INTEGER NOT NULL UNIQUE,
+	"last_modified_day"	INTEGER NOT NULL UNIQUE,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+CREATE TABLE IF NOT EXISTS "interchanges" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"station_a"	INTEGER NOT NULL UNIQUE,
+	"station_b"	INTEGER NOT NULL UNIQUE,
+	PRIMARY KEY("id" AUTOINCREMENT),
+	FOREIGN KEY("station_a") REFERENCES "stations"("id"),
+	FOREIGN KEY("station_b") REFERENCES "stations"("id")
+);
 CREATE TABLE IF NOT EXISTS "line_types" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"name"	TEXT NOT NULL UNIQUE,
@@ -12,14 +27,6 @@ CREATE TABLE IF NOT EXISTS "lines" (
 	"type"	INTEGER NOT NULL DEFAULT 1,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
-CREATE TABLE IF NOT EXISTS "interchanges" (
-	"id"	INTEGER NOT NULL UNIQUE,
-	"station_a"	INTEGER NOT NULL UNIQUE,
-	"station_b"	INTEGER NOT NULL UNIQUE,
-	PRIMARY KEY("id" AUTOINCREMENT),
-	FOREIGN KEY("station_a") REFERENCES "stations"("id"),
-	FOREIGN KEY("station_b") REFERENCES "stations"("id")
-);
 CREATE TABLE IF NOT EXISTS "stations" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"name_en"	TEXT NOT NULL,
@@ -27,28 +34,11 @@ CREATE TABLE IF NOT EXISTS "stations" (
 	"line_id"	INTEGER NOT NULL,
 	"position_in_line"	INTEGER NOT NULL,
 	"interchange_id"	INTEGER,
-	PRIMARY KEY("id" AUTOINCREMENT),
 	FOREIGN KEY("line_id") REFERENCES "lines"("id"),
-	FOREIGN KEY("interchange_id") REFERENCES "interchanges"("id")
-);
-CREATE TABLE IF NOT EXISTS "information" (
-	"id"	INTEGER NOT NULL DEFAULT 1 UNIQUE,
-	"last_modified_year"	INTEGER NOT NULL UNIQUE,
-	"last_modified_month"	INTEGER NOT NULL UNIQUE,
-	"last_modified_day"	INTEGER NOT NULL UNIQUE,
+	FOREIGN KEY("interchange_id") REFERENCES "interchanges"("id"),
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
-INSERT INTO "line_types" VALUES (1,'Metro Line');
-INSERT INTO "line_types" VALUES (2,'Metro Branch');
-INSERT INTO "lines" VALUES (1,'one','یک','C53642',1);
-INSERT INTO "lines" VALUES (2,'two','دو','30577F',1);
-INSERT INTO "lines" VALUES (3,'three','سه','59A7C2',1);
-INSERT INTO "lines" VALUES (4,'four','چهار','E2C21D',1);
-INSERT INTO "lines" VALUES (5,'five','پنج','1A796B',1);
-INSERT INTO "lines" VALUES (6,'six','شش','F677AA',1);
-INSERT INTO "lines" VALUES (7,'seven','هفت','7C4078',1);
-INSERT INTO "lines" VALUES (101,'one','یک','C53642',2);
-INSERT INTO "lines" VALUES (104,'four','چهار','E2C21D',2);
+INSERT INTO "information" VALUES (1,2021,12,28);
 INSERT INTO "interchanges" VALUES (1,42,127);
 INSERT INTO "interchanges" VALUES (2,91,126);
 INSERT INTO "interchanges" VALUES (3,34,117);
@@ -65,6 +55,18 @@ INSERT INTO "interchanges" VALUES (13,17,53);
 INSERT INTO "interchanges" VALUES (14,26,89);
 INSERT INTO "interchanges" VALUES (15,11,78);
 INSERT INTO "interchanges" VALUES (16,27,45);
+INSERT INTO "interchanges" VALUES (17,109,134);
+INSERT INTO "line_types" VALUES (1,'Metro Line');
+INSERT INTO "line_types" VALUES (2,'Metro Branch');
+INSERT INTO "lines" VALUES (1,'one','یک','C53642',1);
+INSERT INTO "lines" VALUES (2,'two','دو','30577F',1);
+INSERT INTO "lines" VALUES (3,'three','سه','59A7C2',1);
+INSERT INTO "lines" VALUES (4,'four','چهار','E2C21D',1);
+INSERT INTO "lines" VALUES (5,'five','پنج','1A796B',1);
+INSERT INTO "lines" VALUES (6,'six','شش','F677AA',1);
+INSERT INTO "lines" VALUES (7,'seven','هفت','7C4078',1);
+INSERT INTO "lines" VALUES (101,'one','یک','C53642',2);
+INSERT INTO "lines" VALUES (104,'four','چهار','E2C21D',2);
 INSERT INTO "stations" VALUES (1,'Forudgah-e Emam Khomeini','فرودگاه امام خمینی',101,2,NULL);
 INSERT INTO "stations" VALUES (2,'Tajrish','تجریش',1,0,NULL);
 INSERT INTO "stations" VALUES (3,'Gheytarie','قیطریه',1,1,NULL);
@@ -92,10 +94,10 @@ INSERT INTO "stations" VALUES (24,'Iran Khordo','ایران خودرو',5,4,NULL
 INSERT INTO "stations" VALUES (25,'Varzeshgah-e Azadi','ورزشگاه آزادی',5,2,NULL);
 INSERT INTO "stations" VALUES (26,'Eram-e Sabz','ارم سبز',5,1,14);
 INSERT INTO "stations" VALUES (27,'Tehran (Sadeghieh)','تهران (صادقیه)',5,0,16);
-INSERT INTO "stations" VALUES (28,'Emam Hossein','امام حسین',6,0,11);
-INSERT INTO "stations" VALUES (29,'Meydan-e Shohada','میدان شهدا',6,1,7);
+INSERT INTO "stations" VALUES (28,'Emam Hossein','امام حسین',6,6,11);
+INSERT INTO "stations" VALUES (29,'Meydan-e Shohada','میدان شهدا',6,5,7);
 INSERT INTO "stations" VALUES (30,'Besat','بعثت',6,2,NULL);
-INSERT INTO "stations" VALUES (31,'Dolat Abad','دولت‌آباد',6,3,NULL);
+INSERT INTO "stations" VALUES (31,'Dolat Abad','دولت‌آباد',6,0,NULL);
 INSERT INTO "stations" VALUES (32,'Panzdah-e Khordad','پانزده خرداد',1,16,NULL);
 INSERT INTO "stations" VALUES (33,'Khayam','خیام',1,17,NULL);
 INSERT INTO "stations" VALUES (34,'Meydan-e Mohammadiyeh','میدان محمدیه',1,18,3);
@@ -151,8 +153,8 @@ INSERT INTO "stations" VALUES (83,'Shahid Zeynoddin','شهید زین‌الدی
 INSERT INTO "stations" VALUES (84,'Meydan-e Horrvey','میدان هروی',3,19,NULL);
 INSERT INTO "stations" VALUES (85,'Hossein Abad','حسین‌آباد',3,20,NULL);
 INSERT INTO "stations" VALUES (86,'Nobonyad','نوبنیاد',3,21,NULL);
-INSERT INTO "stations" VALUES (87,'Shahid Mahalati','شهید محلاتی',3,22,NULL);
-INSERT INTO "stations" VALUES (88,'Ghaem','قائم',3,23,NULL);
+INSERT INTO "stations" VALUES (87,'Shahid Mahalati','شهید محلاتی',3,23,NULL);
+INSERT INTO "stations" VALUES (88,'Ghaem','قائم',3,24,NULL);
 INSERT INTO "stations" VALUES (89,'Eram-e Sabz','ارم سبز',4,18,14);
 INSERT INTO "stations" VALUES (90,'Shahrak-e Ekbatan','شهرک اکباتان',4,17,NULL);
 INSERT INTO "stations" VALUES (91,'Bime','بیمه',4,16,2);
@@ -173,17 +175,17 @@ INSERT INTO "stations" VALUES (105,'Nabard','نبرد',4,2,NULL);
 INSERT INTO "stations" VALUES (106,'Nirou Havaei','نیروهوایی',4,1,NULL);
 INSERT INTO "stations" VALUES (107,'Shahid Kolahdouz','شهید کلاهدوز',4,0,NULL);
 INSERT INTO "stations" VALUES (108,'Meydan-e Sanat','میدان صنعت',7,0,NULL);
-INSERT INTO "stations" VALUES (109,'Daneshgaheh-e Tarbiat Modares','دانشگاه تربیت مدرس',7,1,NULL);
-INSERT INTO "stations" VALUES (110,'Tohid','توحید',7,2,6);
-INSERT INTO "stations" VALUES (111,'Shahid Navab-e Safavi','شهید نواب صفوی',7,3,5);
-INSERT INTO "stations" VALUES (112,'Roudaki','رودکی',7,4,NULL);
-INSERT INTO "stations" VALUES (113,'Komeyl','کمیل',7,5,NULL);
-INSERT INTO "stations" VALUES (114,'Beryanak','بریانک',7,6,NULL);
-INSERT INTO "stations" VALUES (115,'Helal Ahmar','هلال احمر',7,7,NULL);
-INSERT INTO "stations" VALUES (116,'Mahdiyeh','مهدیه',7,8,4);
-INSERT INTO "stations" VALUES (117,'Meydan-e Mohammadiyeh','میدان محمدیه',7,9,3);
-INSERT INTO "stations" VALUES (118,'Molavi','مولوی',7,10,NULL);
-INSERT INTO "stations" VALUES (119,'Basij','بسیج',7,11,NULL);
+INSERT INTO "stations" VALUES (109,'Daneshgaheh-e Tarbiat Modares','دانشگاه تربیت مدرس',7,2,17);
+INSERT INTO "stations" VALUES (110,'Tohid','توحید',7,4,6);
+INSERT INTO "stations" VALUES (111,'Shahid Navab-e Safavi','شهید نواب صفوی',7,5,5);
+INSERT INTO "stations" VALUES (112,'Roudaki','رودکی',7,6,NULL);
+INSERT INTO "stations" VALUES (113,'Komeyl','کمیل',7,7,NULL);
+INSERT INTO "stations" VALUES (114,'Beryanak','بریانک',7,8,NULL);
+INSERT INTO "stations" VALUES (115,'Helal Ahmar','هلال احمر',7,9,NULL);
+INSERT INTO "stations" VALUES (116,'Mahdiyeh','مهدیه',7,10,4);
+INSERT INTO "stations" VALUES (117,'Meydan-e Mohammadiyeh','میدان محمدیه',7,11,3);
+INSERT INTO "stations" VALUES (118,'Molavi','مولوی',7,12,NULL);
+INSERT INTO "stations" VALUES (119,'Basij','بسیج',7,16,NULL);
 INSERT INTO "stations" VALUES (120,'Tehranpars','تهرانپارس',2,20,NULL);
 INSERT INTO "stations" VALUES (121,'Farhangsara','فرهنگسرا',2,21,NULL);
 INSERT INTO "stations" VALUES (122,'Payane 1 va 2 Forudgah-e Mehr-Abad','پایانهٔ ۱ و ۲ فرودگاه مهرآباد',104,1,NULL);
@@ -192,5 +194,21 @@ INSERT INTO "stations" VALUES (124,'Namayeshgah-e Shahr-e Aftab','نمایشگا
 INSERT INTO "stations" VALUES (125,'Chitgar','چیتگر',5,3,NULL);
 INSERT INTO "stations" VALUES (126,'Bime','بیمه',104,0,2);
 INSERT INTO "stations" VALUES (127,'Shahed-Bagher Shahr','شاهد–باقرشهر',101,0,1);
-INSERT INTO "information" VALUES (1,2021,12,21);
+INSERT INTO "stations" VALUES (128,'Aghdasiyeh','اقدسیه',3,22,NULL);
+INSERT INTO "stations" VALUES (129,'Amir Kabir','امیر کبیر',6,4,NULL);
+INSERT INTO "stations" VALUES (130,'Shahid Rezaei','شهید رضایی',6,3,NULL);
+INSERT INTO "stations" VALUES (131,'Kiyan Shahr','ایران شهر',6,1,NULL);
+INSERT INTO "stations" VALUES (132,'Shohada-ye Haftom-e Tir','شهدای هفتم تیر',6,7,NULL);
+INSERT INTO "stations" VALUES (133,'Meydan-e Hazrat-e Vali Asr','میدان حضرت ولی‌عصر',6,8,NULL);
+INSERT INTO "stations" VALUES (134,'Daneshgah-e Tarbiat Modarres','دانشگاه تربیت مدرس',6,9,17);
+INSERT INTO "stations" VALUES (135,'Shahrak-e Azmayesh','شهرک‌ آزمایش',6,10,NULL);
+INSERT INTO "stations" VALUES (136,'Marzdaran','مرزداران',6,11,NULL);
+INSERT INTO "stations" VALUES (137,'Yadegar-e Emam','یادگار امام',6,12,NULL);
+INSERT INTO "stations" VALUES (138,'Shahid Ashrafi Esfahani','شهید اشرفی اصفهانی',6,13,NULL);
+INSERT INTO "stations" VALUES (139,'Shahid Sattari','شهید ستاری',6,14,NULL);
+INSERT INTO "stations" VALUES (140,'Borj-e Milad-e Tehran','برج میلاد تهران',7,1,NULL);
+INSERT INTO "stations" VALUES (141,'Modafean-e Salamat','مدافعان سلامت',7,3,NULL);
+INSERT INTO "stations" VALUES (142,'Meydan-e Ghiyam','میدان قیام',7,13,NULL);
+INSERT INTO "stations" VALUES (143,'Chehel Tan-e Doulab','چهل تن دولاب',7,14,NULL);
+INSERT INTO "stations" VALUES (144,'Ahang','آهنگ',7,15,NULL);
 COMMIT;
