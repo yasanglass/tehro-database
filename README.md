@@ -1,4 +1,4 @@
-![Tehro Banner](https://github.com/yasandev/tehro-database/raw/main/PROMO.png)
+![Tehro Banner](https://github.com/yasandev/tehro-branding/raw/main/PROMO.png)
 
 # Tehro Database
 Tehran Metro database used in [Tehro Android app](https://github.com/yasandev/tehro-android).
