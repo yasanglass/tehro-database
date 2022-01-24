@@ -8,15 +8,15 @@
         "seq": 104
     },
     {
-        "name": "interchanges",
-        "seq": 17
+        "name": "information",
+        "seq": 1
     },
     {
         "name": "stations",
         "seq": 144
     },
     {
-        "name": "information",
-        "seq": 1
+        "name": "intersections",
+        "seq": 17
     }
 ]

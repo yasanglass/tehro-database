@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS "information" (
 	"last_modified_day"	INTEGER NOT NULL UNIQUE,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
-CREATE TABLE IF NOT EXISTS "interchanges" (
+CREATE TABLE IF NOT EXISTS "intersections" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"station_a"	INTEGER NOT NULL UNIQUE,
 	"station_b"	INTEGER NOT NULL UNIQUE,
@@ -27,35 +27,42 @@ CREATE TABLE IF NOT EXISTS "lines" (
 	"type"	INTEGER NOT NULL DEFAULT 1,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
+CREATE TABLE IF NOT EXISTS "station_locations" (
+	"station_id"	INTEGER NOT NULL UNIQUE,
+	"latitude"	INTEGER NOT NULL,
+	"longitude"	INTEGER NOT NULL,
+	PRIMARY KEY("station_id"),
+	FOREIGN KEY("station_id") REFERENCES "stations"("id")
+);
 CREATE TABLE IF NOT EXISTS "stations" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"name_en"	TEXT NOT NULL,
 	"name_fa"	TEXT NOT NULL,
 	"line_id"	INTEGER NOT NULL,
 	"position_in_line"	INTEGER NOT NULL,
-	"interchange_id"	INTEGER,
+	"intersection_id"	INTEGER,
 	FOREIGN KEY("line_id") REFERENCES "lines"("id"),
-	FOREIGN KEY("interchange_id") REFERENCES "interchanges"("id"),
+	FOREIGN KEY("intersection_id") REFERENCES "intersections"("id"),
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
-INSERT INTO "information" VALUES (1,2021,12,28);
-INSERT INTO "interchanges" VALUES (1,42,127);
-INSERT INTO "interchanges" VALUES (2,91,126);
-INSERT INTO "interchanges" VALUES (3,34,117);
-INSERT INTO "interchanges" VALUES (4,72,116);
-INSERT INTO "interchanges" VALUES (5,49,111);
-INSERT INTO "interchanges" VALUES (6,96,110);
-INSERT INTO "interchanges" VALUES (7,29,102);
-INSERT INTO "interchanges" VALUES (8,56,101);
-INSERT INTO "interchanges" VALUES (9,15,100);
-INSERT INTO "interchanges" VALUES (10,74,98);
-INSERT INTO "interchanges" VALUES (11,28,57);
-INSERT INTO "interchanges" VALUES (12,48,95);
-INSERT INTO "interchanges" VALUES (13,17,53);
-INSERT INTO "interchanges" VALUES (14,26,89);
-INSERT INTO "interchanges" VALUES (15,11,78);
-INSERT INTO "interchanges" VALUES (16,27,45);
-INSERT INTO "interchanges" VALUES (17,109,134);
+INSERT INTO "information" VALUES (1,2022,1,25);
+INSERT INTO "intersections" VALUES (1,42,127);
+INSERT INTO "intersections" VALUES (2,91,126);
+INSERT INTO "intersections" VALUES (3,34,117);
+INSERT INTO "intersections" VALUES (4,72,116);
+INSERT INTO "intersections" VALUES (5,49,111);
+INSERT INTO "intersections" VALUES (6,96,110);
+INSERT INTO "intersections" VALUES (7,29,102);
+INSERT INTO "intersections" VALUES (8,56,101);
+INSERT INTO "intersections" VALUES (9,15,100);
+INSERT INTO "intersections" VALUES (10,74,98);
+INSERT INTO "intersections" VALUES (11,28,57);
+INSERT INTO "intersections" VALUES (12,48,95);
+INSERT INTO "intersections" VALUES (13,17,53);
+INSERT INTO "intersections" VALUES (14,26,89);
+INSERT INTO "intersections" VALUES (15,11,78);
+INSERT INTO "intersections" VALUES (16,27,45);
+INSERT INTO "intersections" VALUES (17,109,134);
 INSERT INTO "line_types" VALUES (1,'Metro Line');
 INSERT INTO "line_types" VALUES (2,'Metro Branch');
 INSERT INTO "lines" VALUES (1,'one','یک','C53642',1);
@@ -67,6 +74,10 @@ INSERT INTO "lines" VALUES (6,'six','شش','F677AA',1);
 INSERT INTO "lines" VALUES (7,'seven','هفت','7C4078',1);
 INSERT INTO "lines" VALUES (101,'one','یک','C53642',2);
 INSERT INTO "lines" VALUES (104,'four','چهار','E2C21D',2);
+INSERT INTO "station_locations" VALUES (18,35.8248302,50.9332966);
+INSERT INTO "station_locations" VALUES (19,35.80239,50.9647627);
+INSERT INTO "station_locations" VALUES (74,35.70102,51.405366);
+INSERT INTO "station_locations" VALUES (98,35.70102,51.405366);
 INSERT INTO "stations" VALUES (1,'Forudgah-e Emam Khomeini','فرودگاه امام خمینی',101,2,NULL);
 INSERT INTO "stations" VALUES (2,'Tajrish','تجریش',1,0,NULL);
 INSERT INTO "stations" VALUES (3,'Gheytarie','قیطریه',1,1,NULL);

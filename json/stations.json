@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 101,
         "name_en": "Forudgah-e Emam Khomeini",
         "name_fa": "فرودگاه امام خمینی",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Tajrish",
         "name_fa": "تجریش",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Gheytarie",
         "name_fa": "قیطریه",
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Shahid Sadr",
         "name_fa": "شهید صدر",
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Gholhak",
         "name_fa": "قلهک",
@@ -41,7 +41,7 @@
     },
     {
         "id": 6,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Doctor Shariati",
         "name_fa": "دکتر شریعتی",
@@ -49,7 +49,7 @@
     },
     {
         "id": 7,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Mirdamad",
         "name_fa": "میرداماد",
@@ -57,7 +57,7 @@
     },
     {
         "id": 8,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Shahid Haghani",
         "name_fa": "شهید حقانی",
@@ -65,7 +65,7 @@
     },
     {
         "id": 9,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Shahid Hemat",
         "name_fa": "شهید همت",
@@ -73,7 +73,7 @@
     },
     {
         "id": 10,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Mosalaye Emam Khomeini",
         "name_fa": "مصلای امام خمینی",
@@ -81,7 +81,7 @@
     },
     {
         "id": 11,
-        "interchange_id": 15,
+        "intersection_id": 15,
         "line_id": 1,
         "name_en": "Shahid Beheshti",
         "name_fa": "شهید بهشتی",
@@ -89,7 +89,7 @@
     },
     {
         "id": 12,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Shahid Mofateh",
         "name_fa": "شهید مفتح",
@@ -97,7 +97,7 @@
     },
     {
         "id": 13,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Shohadaye Haftom Tir",
         "name_fa": "شهدای هفتم تیر",
@@ -105,7 +105,7 @@
     },
     {
         "id": 14,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Taleghani",
         "name_fa": "طالقانی",
@@ -113,7 +113,7 @@
     },
     {
         "id": 15,
-        "interchange_id": 9,
+        "intersection_id": 9,
         "line_id": 1,
         "name_en": "Darvaze Dolat",
         "name_fa": "دروازه دولت",
@@ -121,7 +121,7 @@
     },
     {
         "id": 16,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Saadi",
         "name_fa": "سعدی",
@@ -129,7 +129,7 @@
     },
     {
         "id": 17,
-        "interchange_id": 13,
+        "intersection_id": 13,
         "line_id": 1,
         "name_en": "Emam Khomeini",
         "name_fa": "امام خمینی",
@@ -137,7 +137,7 @@
     },
     {
         "id": 18,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 5,
         "name_en": "Golshahr",
         "name_fa": "گلشهر",
@@ -145,7 +145,7 @@
     },
     {
         "id": 19,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 5,
         "name_en": "Mohammad Shahr",
         "name_fa": "محمدشهر",
@@ -153,7 +153,7 @@
     },
     {
         "id": 20,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 5,
         "name_en": "Karaj",
         "name_fa": "کرج",
@@ -161,7 +161,7 @@
     },
     {
         "id": 21,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 5,
         "name_en": "Atmosfer",
         "name_fa": "اتمسفر",
@@ -169,7 +169,7 @@
     },
     {
         "id": 22,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 5,
         "name_en": "Garmdareh",
         "name_fa": "گرم‌دره",
@@ -177,7 +177,7 @@
     },
     {
         "id": 23,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 5,
         "name_en": "Vardavard",
         "name_fa": "وردآورد",
@@ -185,7 +185,7 @@
     },
     {
         "id": 24,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 5,
         "name_en": "Iran Khordo",
         "name_fa": "ایران خودرو",
@@ -193,7 +193,7 @@
     },
     {
         "id": 25,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 5,
         "name_en": "Varzeshgah-e Azadi",
         "name_fa": "ورزشگاه آزادی",
@@ -201,7 +201,7 @@
     },
     {
         "id": 26,
-        "interchange_id": 14,
+        "intersection_id": 14,
         "line_id": 5,
         "name_en": "Eram-e Sabz",
         "name_fa": "ارم سبز",
@@ -209,7 +209,7 @@
     },
     {
         "id": 27,
-        "interchange_id": 16,
+        "intersection_id": 16,
         "line_id": 5,
         "name_en": "Tehran (Sadeghieh)",
         "name_fa": "تهران (صادقیه)",
@@ -217,7 +217,7 @@
     },
     {
         "id": 28,
-        "interchange_id": 11,
+        "intersection_id": 11,
         "line_id": 6,
         "name_en": "Emam Hossein",
         "name_fa": "امام حسین",
@@ -225,7 +225,7 @@
     },
     {
         "id": 29,
-        "interchange_id": 7,
+        "intersection_id": 7,
         "line_id": 6,
         "name_en": "Meydan-e Shohada",
         "name_fa": "میدان شهدا",
@@ -233,7 +233,7 @@
     },
     {
         "id": 30,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Besat",
         "name_fa": "بعثت",
@@ -241,7 +241,7 @@
     },
     {
         "id": 31,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Dolat Abad",
         "name_fa": "دولت‌آباد",
@@ -249,7 +249,7 @@
     },
     {
         "id": 32,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Panzdah-e Khordad",
         "name_fa": "پانزده خرداد",
@@ -257,7 +257,7 @@
     },
     {
         "id": 33,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Khayam",
         "name_fa": "خیام",
@@ -265,7 +265,7 @@
     },
     {
         "id": 34,
-        "interchange_id": 3,
+        "intersection_id": 3,
         "line_id": 1,
         "name_en": "Meydan-e Mohammadiyeh",
         "name_fa": "میدان محمدیه",
@@ -273,7 +273,7 @@
     },
     {
         "id": 35,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Shoosh",
         "name_fa": "شوش",
@@ -281,7 +281,7 @@
     },
     {
         "id": 36,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Payane Jonub",
         "name_fa": "پایانهٔ جنوب",
@@ -289,7 +289,7 @@
     },
     {
         "id": 37,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Shahid Bokharaei",
         "name_fa": "شهید بخارایی",
@@ -297,7 +297,7 @@
     },
     {
         "id": 38,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Ali Abad",
         "name_fa": "علی‌آباد",
@@ -305,7 +305,7 @@
     },
     {
         "id": 39,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Javanmard-e Ghasab",
         "name_fa": "جوانمرد قصاب",
@@ -313,7 +313,7 @@
     },
     {
         "id": 40,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Shahr-e Rey",
         "name_fa": "شهرری",
@@ -321,7 +321,7 @@
     },
     {
         "id": 41,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Palayeshgah",
         "name_fa": "پالایشگاه",
@@ -329,7 +329,7 @@
     },
     {
         "id": 42,
-        "interchange_id": 1,
+        "intersection_id": 1,
         "line_id": 1,
         "name_en": "Shahed-Bagher Shahr",
         "name_fa": "شاهد–باقرشهر",
@@ -337,7 +337,7 @@
     },
     {
         "id": 43,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "haramme Motahar-e Emam Khomeini",
         "name_fa": "حرم مطهر امام خمینی",
@@ -345,7 +345,7 @@
     },
     {
         "id": 44,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 1,
         "name_en": "Kahrizak",
         "name_fa": "کهریزک",
@@ -353,7 +353,7 @@
     },
     {
         "id": 45,
-        "interchange_id": 16,
+        "intersection_id": 16,
         "line_id": 2,
         "name_en": "Tehran (Sadeghieh)",
         "name_fa": "تهران (صادقیه)",
@@ -361,7 +361,7 @@
     },
     {
         "id": 46,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Tarasht",
         "name_fa": "طرشت",
@@ -369,7 +369,7 @@
     },
     {
         "id": 47,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Daneshgah-e Sharif",
         "name_fa": "دانشگاه شریف",
@@ -377,7 +377,7 @@
     },
     {
         "id": 48,
-        "interchange_id": 12,
+        "intersection_id": 12,
         "line_id": 2,
         "name_en": "Shadman",
         "name_fa": "شادمان",
@@ -385,7 +385,7 @@
     },
     {
         "id": 49,
-        "interchange_id": 5,
+        "intersection_id": 5,
         "line_id": 2,
         "name_en": "Shahid Navab-e Safavi",
         "name_fa": "شهید نواب صفوی",
@@ -393,7 +393,7 @@
     },
     {
         "id": 50,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Meydan-e Hor",
         "name_fa": "میدان حر",
@@ -401,7 +401,7 @@
     },
     {
         "id": 51,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Daneshgah-e Emam Ali",
         "name_fa": "دانشگاه امام علی",
@@ -409,7 +409,7 @@
     },
     {
         "id": 52,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Hassan Abad",
         "name_fa": "حسن‌آباد",
@@ -417,7 +417,7 @@
     },
     {
         "id": 53,
-        "interchange_id": 13,
+        "intersection_id": 13,
         "line_id": 2,
         "name_en": "Emam Khomeini",
         "name_fa": "امام خمینی",
@@ -425,7 +425,7 @@
     },
     {
         "id": 54,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Mellat",
         "name_fa": "ملت",
@@ -433,7 +433,7 @@
     },
     {
         "id": 55,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Baharaestan",
         "name_fa": "بهارستان",
@@ -441,7 +441,7 @@
     },
     {
         "id": 56,
-        "interchange_id": 8,
+        "intersection_id": 8,
         "line_id": 2,
         "name_en": "Darvaze Shemiran",
         "name_fa": "دروازه شمیران",
@@ -449,7 +449,7 @@
     },
     {
         "id": 57,
-        "interchange_id": 11,
+        "intersection_id": 11,
         "line_id": 2,
         "name_en": "Emam Hossein",
         "name_fa": "امام حسین",
@@ -457,7 +457,7 @@
     },
     {
         "id": 58,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Shahid Madani",
         "name_fa": "شهید مدنی",
@@ -465,7 +465,7 @@
     },
     {
         "id": 59,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Sabalan",
         "name_fa": "سبلان",
@@ -473,7 +473,7 @@
     },
     {
         "id": 60,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Fadak",
         "name_fa": "فدک",
@@ -481,7 +481,7 @@
     },
     {
         "id": 61,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Janbazan",
         "name_fa": "جانبازان",
@@ -489,7 +489,7 @@
     },
     {
         "id": 62,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Sarsabz",
         "name_fa": "سرسبز",
@@ -497,7 +497,7 @@
     },
     {
         "id": 63,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Daneshgah-e Elm-o Sanat",
         "name_fa": "دانشگاه علم و صنعت",
@@ -505,7 +505,7 @@
     },
     {
         "id": 64,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Shahid Bagheri",
         "name_fa": "شهید باقری",
@@ -513,7 +513,7 @@
     },
     {
         "id": 65,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Azadegan",
         "name_fa": "آزادگان",
@@ -521,7 +521,7 @@
     },
     {
         "id": 66,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Nemat Abad",
         "name_fa": "نعمت‌آباد",
@@ -529,7 +529,7 @@
     },
     {
         "id": 67,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Abdol Abad",
         "name_fa": "عبدل‌آباد",
@@ -537,7 +537,7 @@
     },
     {
         "id": 68,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Shahrak-e Shariati",
         "name_fa": "شهرک شریعتی",
@@ -545,7 +545,7 @@
     },
     {
         "id": 69,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Zamzam",
         "name_fa": "زمزم",
@@ -553,7 +553,7 @@
     },
     {
         "id": 70,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Javadieh",
         "name_fa": "جوادیه",
@@ -561,7 +561,7 @@
     },
     {
         "id": 71,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Rah Ahan",
         "name_fa": "راه‌آهن",
@@ -569,7 +569,7 @@
     },
     {
         "id": 72,
-        "interchange_id": 4,
+        "intersection_id": 4,
         "line_id": 3,
         "name_en": "Mahdiyeh",
         "name_fa": "مهدیه",
@@ -577,7 +577,7 @@
     },
     {
         "id": 73,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Moniriyeh",
         "name_fa": "منیریه",
@@ -585,7 +585,7 @@
     },
     {
         "id": 74,
-        "interchange_id": 10,
+        "intersection_id": 10,
         "line_id": 3,
         "name_en": "Taatr-e Shahr",
         "name_fa": "تئاتر شهر",
@@ -593,7 +593,7 @@
     },
     {
         "id": 75,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Meydan-e Hazrat-e Valiasr",
         "name_fa": "میدان حضرت ولی‌عصر",
@@ -601,7 +601,7 @@
     },
     {
         "id": 76,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Meydan-e Jahad",
         "name_fa": "میدان جهاد",
@@ -609,7 +609,7 @@
     },
     {
         "id": 77,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Mirza-ye Shirazi",
         "name_fa": "میرزای شیرازی",
@@ -617,7 +617,7 @@
     },
     {
         "id": 78,
-        "interchange_id": 15,
+        "intersection_id": 15,
         "line_id": 3,
         "name_en": "Shahid Beheshti",
         "name_fa": "شهید بهشتی",
@@ -625,7 +625,7 @@
     },
     {
         "id": 79,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Sohrevardi",
         "name_fa": "سهروردی",
@@ -633,7 +633,7 @@
     },
     {
         "id": 80,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Shahid Ghodusi",
         "name_fa": "شهید قدوسی",
@@ -641,7 +641,7 @@
     },
     {
         "id": 81,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Shahid Sayyad-e Shirazi",
         "name_fa": "شهید صیاد شیرازی",
@@ -649,7 +649,7 @@
     },
     {
         "id": 82,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Khajeh Abdollah-e Ansari",
         "name_fa": "خواجه عبدالله انصاری",
@@ -657,7 +657,7 @@
     },
     {
         "id": 83,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Shahid Zeynoddin",
         "name_fa": "شهید زین‌الدین",
@@ -665,7 +665,7 @@
     },
     {
         "id": 84,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Meydan-e Horrvey",
         "name_fa": "میدان هروی",
@@ -673,7 +673,7 @@
     },
     {
         "id": 85,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Hossein Abad",
         "name_fa": "حسین‌آباد",
@@ -681,7 +681,7 @@
     },
     {
         "id": 86,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Nobonyad",
         "name_fa": "نوبنیاد",
@@ -689,7 +689,7 @@
     },
     {
         "id": 87,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Shahid Mahalati",
         "name_fa": "شهید محلاتی",
@@ -697,7 +697,7 @@
     },
     {
         "id": 88,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Ghaem",
         "name_fa": "قائم",
@@ -705,7 +705,7 @@
     },
     {
         "id": 89,
-        "interchange_id": 14,
+        "intersection_id": 14,
         "line_id": 4,
         "name_en": "Eram-e Sabz",
         "name_fa": "ارم سبز",
@@ -713,7 +713,7 @@
     },
     {
         "id": 90,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Shahrak-e Ekbatan",
         "name_fa": "شهرک اکباتان",
@@ -721,7 +721,7 @@
     },
     {
         "id": 91,
-        "interchange_id": 2,
+        "intersection_id": 2,
         "line_id": 4,
         "name_en": "Bime",
         "name_fa": "بیمه",
@@ -729,7 +729,7 @@
     },
     {
         "id": 92,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Meydan-e Azadi",
         "name_fa": "میدان آزادی",
@@ -737,7 +737,7 @@
     },
     {
         "id": 93,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Ostad Moein",
         "name_fa": "استاد معین",
@@ -745,7 +745,7 @@
     },
     {
         "id": 94,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Doctor Habibollah",
         "name_fa": "دکتر حبیب‌الله",
@@ -753,7 +753,7 @@
     },
     {
         "id": 95,
-        "interchange_id": 12,
+        "intersection_id": 12,
         "line_id": 4,
         "name_en": "Shadman",
         "name_fa": "شادمان",
@@ -761,7 +761,7 @@
     },
     {
         "id": 96,
-        "interchange_id": 6,
+        "intersection_id": 6,
         "line_id": 4,
         "name_en": "Tohid",
         "name_fa": "توحید",
@@ -769,7 +769,7 @@
     },
     {
         "id": 97,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Meydan-e Enghelab-e Eslami",
         "name_fa": "میدان انقلاب اسلامی",
@@ -777,7 +777,7 @@
     },
     {
         "id": 98,
-        "interchange_id": 10,
+        "intersection_id": 10,
         "line_id": 4,
         "name_en": "Taatr-e Shahr",
         "name_fa": "تئاتر شهر",
@@ -785,7 +785,7 @@
     },
     {
         "id": 99,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Ferdowsi",
         "name_fa": "فردوسی",
@@ -793,7 +793,7 @@
     },
     {
         "id": 100,
-        "interchange_id": 9,
+        "intersection_id": 9,
         "line_id": 4,
         "name_en": "Darvaze Dolat",
         "name_fa": "دروازه دولت",
@@ -801,7 +801,7 @@
     },
     {
         "id": 101,
-        "interchange_id": 8,
+        "intersection_id": 8,
         "line_id": 4,
         "name_en": "Darvaze Shemiran",
         "name_fa": "دروازه شمیران",
@@ -809,7 +809,7 @@
     },
     {
         "id": 102,
-        "interchange_id": 7,
+        "intersection_id": 7,
         "line_id": 4,
         "name_en": "Meydan-e Shohada",
         "name_fa": "میدان شهدا",
@@ -817,7 +817,7 @@
     },
     {
         "id": 103,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Ebn-e Sina",
         "name_fa": "ابن سینا",
@@ -825,7 +825,7 @@
     },
     {
         "id": 104,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Pirouzi",
         "name_fa": "پیروزی",
@@ -833,7 +833,7 @@
     },
     {
         "id": 105,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Nabard",
         "name_fa": "نبرد",
@@ -841,7 +841,7 @@
     },
     {
         "id": 106,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Nirou Havaei",
         "name_fa": "نیروهوایی",
@@ -849,7 +849,7 @@
     },
     {
         "id": 107,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 4,
         "name_en": "Shahid Kolahdouz",
         "name_fa": "شهید کلاهدوز",
@@ -857,7 +857,7 @@
     },
     {
         "id": 108,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Meydan-e Sanat",
         "name_fa": "میدان صنعت",
@@ -865,7 +865,7 @@
     },
     {
         "id": 109,
-        "interchange_id": 17,
+        "intersection_id": 17,
         "line_id": 7,
         "name_en": "Daneshgaheh-e Tarbiat Modares",
         "name_fa": "دانشگاه تربیت مدرس",
@@ -873,7 +873,7 @@
     },
     {
         "id": 110,
-        "interchange_id": 6,
+        "intersection_id": 6,
         "line_id": 7,
         "name_en": "Tohid",
         "name_fa": "توحید",
@@ -881,7 +881,7 @@
     },
     {
         "id": 111,
-        "interchange_id": 5,
+        "intersection_id": 5,
         "line_id": 7,
         "name_en": "Shahid Navab-e Safavi",
         "name_fa": "شهید نواب صفوی",
@@ -889,7 +889,7 @@
     },
     {
         "id": 112,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Roudaki",
         "name_fa": "رودکی",
@@ -897,7 +897,7 @@
     },
     {
         "id": 113,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Komeyl",
         "name_fa": "کمیل",
@@ -905,7 +905,7 @@
     },
     {
         "id": 114,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Beryanak",
         "name_fa": "بریانک",
@@ -913,7 +913,7 @@
     },
     {
         "id": 115,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Helal Ahmar",
         "name_fa": "هلال احمر",
@@ -921,7 +921,7 @@
     },
     {
         "id": 116,
-        "interchange_id": 4,
+        "intersection_id": 4,
         "line_id": 7,
         "name_en": "Mahdiyeh",
         "name_fa": "مهدیه",
@@ -929,7 +929,7 @@
     },
     {
         "id": 117,
-        "interchange_id": 3,
+        "intersection_id": 3,
         "line_id": 7,
         "name_en": "Meydan-e Mohammadiyeh",
         "name_fa": "میدان محمدیه",
@@ -937,7 +937,7 @@
     },
     {
         "id": 118,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Molavi",
         "name_fa": "مولوی",
@@ -945,7 +945,7 @@
     },
     {
         "id": 119,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Basij",
         "name_fa": "بسیج",
@@ -953,7 +953,7 @@
     },
     {
         "id": 120,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Tehranpars",
         "name_fa": "تهرانپارس",
@@ -961,7 +961,7 @@
     },
     {
         "id": 121,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 2,
         "name_en": "Farhangsara",
         "name_fa": "فرهنگسرا",
@@ -969,7 +969,7 @@
     },
     {
         "id": 122,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 104,
         "name_en": "Payane 1 va 2 Forudgah-e Mehr-Abad",
         "name_fa": "پایانهٔ ۱ و ۲ فرودگاه مهرآباد",
@@ -977,7 +977,7 @@
     },
     {
         "id": 123,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 104,
         "name_en": "Payane 4 va 6 Forudgah-e Mehr-Abad",
         "name_fa": "پایانهٔ ۴ و ۶ فرودگاه مهرآباد",
@@ -985,7 +985,7 @@
     },
     {
         "id": 124,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 101,
         "name_en": "Namayeshgah-e Shahr-e Aftab",
         "name_fa": "نمایشگاه شهر آفتاب",
@@ -993,7 +993,7 @@
     },
     {
         "id": 125,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 5,
         "name_en": "Chitgar",
         "name_fa": "چیتگر",
@@ -1001,7 +1001,7 @@
     },
     {
         "id": 126,
-        "interchange_id": 2,
+        "intersection_id": 2,
         "line_id": 104,
         "name_en": "Bime",
         "name_fa": "بیمه",
@@ -1009,7 +1009,7 @@
     },
     {
         "id": 127,
-        "interchange_id": 1,
+        "intersection_id": 1,
         "line_id": 101,
         "name_en": "Shahed-Bagher Shahr",
         "name_fa": "شاهد–باقرشهر",
@@ -1017,7 +1017,7 @@
     },
     {
         "id": 128,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 3,
         "name_en": "Aghdasiyeh",
         "name_fa": "اقدسیه",
@@ -1025,7 +1025,7 @@
     },
     {
         "id": 129,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Amir Kabir",
         "name_fa": "امیر کبیر",
@@ -1033,7 +1033,7 @@
     },
     {
         "id": 130,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Shahid Rezaei",
         "name_fa": "شهید رضایی",
@@ -1041,7 +1041,7 @@
     },
     {
         "id": 131,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Kiyan Shahr",
         "name_fa": "ایران شهر",
@@ -1049,7 +1049,7 @@
     },
     {
         "id": 132,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Shohada-ye Haftom-e Tir",
         "name_fa": "شهدای هفتم تیر",
@@ -1057,7 +1057,7 @@
     },
     {
         "id": 133,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Meydan-e Hazrat-e Vali Asr",
         "name_fa": "میدان حضرت ولی‌عصر",
@@ -1065,7 +1065,7 @@
     },
     {
         "id": 134,
-        "interchange_id": 17,
+        "intersection_id": 17,
         "line_id": 6,
         "name_en": "Daneshgah-e Tarbiat Modarres",
         "name_fa": "دانشگاه تربیت مدرس",
@@ -1073,7 +1073,7 @@
     },
     {
         "id": 135,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Shahrak-e Azmayesh",
         "name_fa": "شهرک‌ آزمایش",
@@ -1081,7 +1081,7 @@
     },
     {
         "id": 136,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Marzdaran",
         "name_fa": "مرزداران",
@@ -1089,7 +1089,7 @@
     },
     {
         "id": 137,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Yadegar-e Emam",
         "name_fa": "یادگار امام",
@@ -1097,7 +1097,7 @@
     },
     {
         "id": 138,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Shahid Ashrafi Esfahani",
         "name_fa": "شهید اشرفی اصفهانی",
@@ -1105,7 +1105,7 @@
     },
     {
         "id": 139,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 6,
         "name_en": "Shahid Sattari",
         "name_fa": "شهید ستاری",
@@ -1113,7 +1113,7 @@
     },
     {
         "id": 140,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Borj-e Milad-e Tehran",
         "name_fa": "برج میلاد تهران",
@@ -1121,7 +1121,7 @@
     },
     {
         "id": 141,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Modafean-e Salamat",
         "name_fa": "مدافعان سلامت",
@@ -1129,7 +1129,7 @@
     },
     {
         "id": 142,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Meydan-e Ghiyam",
         "name_fa": "میدان قیام",
@@ -1137,7 +1137,7 @@
     },
     {
         "id": 143,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Chehel Tan-e Doulab",
         "name_fa": "چهل تن دولاب",
@@ -1145,7 +1145,7 @@
     },
     {
         "id": 144,
-        "interchange_id": null,
+        "intersection_id": null,
         "line_id": 7,
         "name_en": "Ahang",
         "name_fa": "آهنگ",
