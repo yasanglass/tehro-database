@@ -45,6 +45,14 @@ CREATE TABLE IF NOT EXISTS "stations" (
 	FOREIGN KEY("intersection_id") REFERENCES "intersections"("id"),
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
+CREATE TABLE IF NOT EXISTS "stations_accessbility" (
+	"station_id"	INTEGER NOT NULL UNIQUE,
+	"emergency_medical_services"	INTEGER NOT NULL DEFAULT 0,
+	"wheelchair_accessibility_level"	INTEGER DEFAULT 0,
+	"blind_accessibility_level"	INTEGER DEFAULT 0,
+	PRIMARY KEY("station_id"),
+	FOREIGN KEY("station_id") REFERENCES "stations"("id")
+);
 INSERT INTO "information" VALUES (1,2022,1,25);
 INSERT INTO "intersections" VALUES (1,42,127);
 INSERT INTO "intersections" VALUES (2,91,126);
@@ -222,4 +230,11 @@ INSERT INTO "stations" VALUES (141,'Modafean-e Salamat','مدافعان سلام
 INSERT INTO "stations" VALUES (142,'Meydan-e Ghiyam','میدان قیام',7,13,NULL);
 INSERT INTO "stations" VALUES (143,'Chehel Tan-e Doulab','چهل تن دولاب',7,14,NULL);
 INSERT INTO "stations" VALUES (144,'Ahang','آهنگ',7,15,NULL);
+INSERT INTO "stations_accessbility" VALUES (26,1,3,0);
+INSERT INTO "stations_accessbility" VALUES (27,1,4,0);
+INSERT INTO "stations_accessbility" VALUES (45,1,4,0);
+INSERT INTO "stations_accessbility" VALUES (89,1,3,0);
+INSERT INTO "stations_accessbility" VALUES (90,0,0,1);
+INSERT INTO "stations_accessbility" VALUES (91,0,0,0);
+INSERT INTO "stations_accessbility" VALUES (126,0,0,0);
 COMMIT;
