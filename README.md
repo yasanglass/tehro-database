@@ -10,6 +10,6 @@ Since .db database files are binary and their diff is not visible in commits, al
 
 ## Contributing
 
-Pull requests are welcome. Your changes should be reflected both on the SQL dump and the database file.
+Pull requests are welcome. Your changes should be reflected both on the [SQL dump](https://github.com/yasandev/tehro-database/blob/main/tehro.sql) and the [database file](https://github.com/yasandev/tehro-database/blob/main/tehro.db).
 
 For major changes, please open an issue first to discuss what you would like to change.
