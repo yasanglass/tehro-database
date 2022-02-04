@@ -48,8 +48,8 @@ CREATE TABLE IF NOT EXISTS "stations" (
 CREATE TABLE IF NOT EXISTS "stations_accessibility" (
 	"station_id"	INTEGER NOT NULL UNIQUE,
 	"emergency_medical_services"	INTEGER NOT NULL DEFAULT 0,
-	"wheelchair_accessibility_level"	INTEGER DEFAULT 0,
-	"blind_accessibility_level"	INTEGER DEFAULT 0,
+	"wheelchair_accessibility_level"	INTEGER NOT NULL DEFAULT 0,
+	"blind_accessibility_level"	INTEGER NOT NULL DEFAULT 0,
 	PRIMARY KEY("station_id"),
 	FOREIGN KEY("station_id") REFERENCES "stations"("id")
 );
