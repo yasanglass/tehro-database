@@ -27,9 +27,9 @@ CREATE TABLE IF NOT EXISTS "intersections" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"station_a"	INTEGER NOT NULL UNIQUE,
 	"station_b"	INTEGER NOT NULL UNIQUE,
-	PRIMARY KEY("id" AUTOINCREMENT),
 	FOREIGN KEY("station_a") REFERENCES "stations"("id"),
-	FOREIGN KEY("station_b") REFERENCES "stations"("id")
+	FOREIGN KEY("station_b") REFERENCES "stations"("id"),
+	PRIMARY KEY("id" AUTOINCREMENT)
 );
 DROP TABLE IF EXISTS "stations_accessibility_wheelchair_levels";
 CREATE TABLE IF NOT EXISTS "stations_accessibility_wheelchair_levels" (
@@ -52,8 +52,8 @@ CREATE TABLE IF NOT EXISTS "stations" (
 	"has_emergency_medical_services"	INTEGER COLLATE BINARY,
 	"accessibility_wheelchair_level"	INTEGER,
 	"accessibility_blindness_level"	INTEGER,
-	PRIMARY KEY("id" AUTOINCREMENT),
-	FOREIGN KEY("line_id") REFERENCES "lines"("id")
+	FOREIGN KEY("line_id") REFERENCES "lines"("id"),
+	PRIMARY KEY("id" AUTOINCREMENT)
 );
 DROP TABLE IF EXISTS "stations_accessibility_blindness_levels";
 CREATE TABLE IF NOT EXISTS "stations_accessibility_blindness_levels" (
@@ -105,7 +105,7 @@ INSERT INTO "stations" VALUES (6,'Doctor Shariati','دکتر شریعتی',1,4,N
 INSERT INTO "stations" VALUES (7,'Mirdamad','میرداماد',1,5,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "stations" VALUES (8,'Shahid Haghani','شهید حقانی',1,6,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "stations" VALUES (9,'Shahid Hemat','شهید همت',1,7,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO "stations" VALUES (10,'Mosalaye Emam Khomeini','مصلای امام خمینی',1,8,NULL,NULL,NULL,NULL,'',NULL,NULL);
+INSERT INTO "stations" VALUES (10,'Mosalaye Emam Khomeini','مصلای امام خمینی',1,8,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "stations" VALUES (11,'Shahid Beheshti','شهید بهشتی',1,9,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "stations" VALUES (12,'Shahid Mofateh','شهید مفتح',1,10,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
 INSERT INTO "stations" VALUES (13,'Shohadaye Haftom Tir','شهدای هفتم تیر',1,11,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
