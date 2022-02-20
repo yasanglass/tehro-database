@@ -59,9 +59,9 @@ CREATE TABLE IF NOT EXISTS "stations" (
 	"has_emergency_medical_services"	INTEGER NOT NULL,
 	"accessibility_wheelchair_level"	INTEGER,
 	"accessibility_blindness_level"	INTEGER,
-	FOREIGN KEY("accessibility_wheelchair_level") REFERENCES "stations_accessibility_wheelchair_levels"("id"),
 	FOREIGN KEY("accessibility_blindness_level") REFERENCES "stations_accessibility_blindness_levels"("id"),
 	FOREIGN KEY("line_id") REFERENCES "lines"("id"),
+	FOREIGN KEY("accessibility_wheelchair_level") REFERENCES "stations_accessibility_wheelchair_levels"("id"),
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 INSERT INTO "line_types" VALUES (1,'Metro Line');
@@ -97,7 +97,7 @@ INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (1,'Not wheelchair
 INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (2,'Elevator from street to one platform','آسانسور از سطح خیابان به یک سکو');
 INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (3,'Elevator from street to both platforms','آسانسور از سطح خیابان به هر دو سکو');
 INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (4,'Elevator from ticket sales hall to platform','آسانسور از سالن فروش بلیت به سکو');
-INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (5,'Elevator from street to ticket sales hall &amp; from ticket sales hall to platform','آسانسور از سطح خیابان به سالن فروش بلیت و از سالن فروش بلیت به سکو');
+INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (5,'Elevator from street to ticket sales hall & from ticket sales hall to platform','آسانسور از سطح خیابان به سالن فروش بلیت و از سالن فروش بلیت به سکو');
 INSERT INTO "stations_accessibility_blindness_levels" VALUES (1,'Not accessible to the visually impaired','فاقد مسیر نابینایان');
 INSERT INTO "stations_accessibility_blindness_levels" VALUES (2,'Accessible to the visually impaired on platforms only','دارای مسیر نابینابان در سکو‌ها');
 INSERT INTO "stations_accessibility_blindness_levels" VALUES (3,'Accessible to the visually impaired','دارای مسیر نابینایان در تمام ایستگاه');
