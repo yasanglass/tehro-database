@@ -1,21 +1,6 @@
 BEGIN TRANSACTION;
-DROP TABLE IF EXISTS "line_types";
-CREATE TABLE IF NOT EXISTS "line_types" (
-	"id"	INTEGER NOT NULL UNIQUE,
-	"name"	TEXT NOT NULL UNIQUE,
-	PRIMARY KEY("id" AUTOINCREMENT)
-);
-DROP TABLE IF EXISTS "lines";
-CREATE TABLE IF NOT EXISTS "lines" (
-	"id"	INTEGER NOT NULL UNIQUE,
-	"name_en"	TEXT NOT NULL,
-	"name_fa"	TEXT NOT NULL,
-	"color"	TEXT,
-	"type"	INTEGER NOT NULL DEFAULT 1,
-	PRIMARY KEY("id" AUTOINCREMENT)
-);
 DROP TABLE IF EXISTS "information";
-CREATE TABLE IF NOT EXISTS "information" (
+CREATE TABLE "information" (
 	"id"	INTEGER NOT NULL DEFAULT 1 UNIQUE,
 	"last_modified_year"	INTEGER NOT NULL UNIQUE,
 	"last_modified_month"	INTEGER NOT NULL UNIQUE,
@@ -23,37 +8,31 @@ CREATE TABLE IF NOT EXISTS "information" (
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 DROP TABLE IF EXISTS "intersections";
-CREATE TABLE IF NOT EXISTS "intersections" (
+CREATE TABLE "intersections" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"station_a"	INTEGER NOT NULL UNIQUE,
 	"station_b"	INTEGER NOT NULL UNIQUE,
-	FOREIGN KEY("station_b") REFERENCES "stations"("id"),
+	PRIMARY KEY("id" AUTOINCREMENT),
 	FOREIGN KEY("station_a") REFERENCES "stations"("id"),
+	FOREIGN KEY("station_b") REFERENCES "stations"("id")
+);
+DROP TABLE IF EXISTS "line_types";
+CREATE TABLE "line_types" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"name"	TEXT NOT NULL UNIQUE,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
-DROP TABLE IF EXISTS "stations_accessibility_wheelchair_levels";
-CREATE TABLE IF NOT EXISTS "stations_accessibility_wheelchair_levels" (
+DROP TABLE IF EXISTS "lines";
+CREATE TABLE "lines" (
 	"id"	INTEGER NOT NULL UNIQUE,
-	"description_en"	TEXT NOT NULL,
-	"description_fa"	TEXT NOT NULL,
-	PRIMARY KEY("id" AUTOINCREMENT)
-);
-DROP TABLE IF EXISTS "stations_accessibility_blindness_levels";
-CREATE TABLE IF NOT EXISTS "stations_accessibility_blindness_levels" (
-	"id"	INTEGER NOT NULL UNIQUE,
-	"description_en"	TEXT NOT NULL,
-	"description_fa"	TEXT NOT NULL,
-	PRIMARY KEY("id" AUTOINCREMENT)
-);
-DROP TABLE IF EXISTS "stations_wc_availability_levels";
-CREATE TABLE IF NOT EXISTS "stations_wc_availability_levels" (
-	"id"	INTEGER NOT NULL UNIQUE,
-	"description_en"	TEXT NOT NULL,
-	"description_fa"	TEXT NOT NULL,
+	"name_en"	TEXT NOT NULL,
+	"name_fa"	TEXT NOT NULL,
+	"color"	TEXT,
+	"type"	INTEGER NOT NULL DEFAULT 1,
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
 DROP TABLE IF EXISTS "stations";
-CREATE TABLE IF NOT EXISTS "stations" (
+CREATE TABLE "stations" (
 	"id"	INTEGER NOT NULL UNIQUE,
 	"name_en"	TEXT NOT NULL,
 	"name_fa"	TEXT NOT NULL,
@@ -67,24 +46,34 @@ CREATE TABLE IF NOT EXISTS "stations" (
 	"accessibility_wheelchair_level"	INTEGER NOT NULL DEFAULT 1,
 	"accessibility_blindness_level"	INTEGER NOT NULL DEFAULT 1,
 	"wc"	INTEGER NOT NULL DEFAULT 1,
-	FOREIGN KEY("accessibility_blindness_level") REFERENCES "stations_accessibility_blindness_levels"("id"),
-	FOREIGN KEY("wc") REFERENCES "stations_wc_availability_levels"("id"),
 	FOREIGN KEY("line_id") REFERENCES "lines"("id"),
+	FOREIGN KEY("wc") REFERENCES "stations_wc_availability_levels"("id"),
+	FOREIGN KEY("accessibility_blindness_level") REFERENCES "stations_accessibility_blindness_levels"("id"),
 	FOREIGN KEY("accessibility_wheelchair_level") REFERENCES "stations_accessibility_wheelchair_levels"("id"),
 	PRIMARY KEY("id" AUTOINCREMENT)
 );
-INSERT INTO "line_types" VALUES (1,'Metro Line');
-INSERT INTO "line_types" VALUES (2,'Metro Branch');
-INSERT INTO "lines" VALUES (1,'one','یک','C53642',1);
-INSERT INTO "lines" VALUES (2,'two','دو','30577F',1);
-INSERT INTO "lines" VALUES (3,'three','سه','59A7C2',1);
-INSERT INTO "lines" VALUES (4,'four','چهار','E2C21D',1);
-INSERT INTO "lines" VALUES (5,'five','پنج','1A796B',1);
-INSERT INTO "lines" VALUES (6,'six','شش','F677AA',1);
-INSERT INTO "lines" VALUES (7,'seven','هفت','7C4078',1);
-INSERT INTO "lines" VALUES (101,'one','یک','C53642',2);
-INSERT INTO "lines" VALUES (104,'four','چهار','E2C21D',2);
-INSERT INTO "information" VALUES (1,2022,2,23);
+DROP TABLE IF EXISTS "stations_accessibility_blindness_levels";
+CREATE TABLE "stations_accessibility_blindness_levels" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"description_en"	TEXT NOT NULL,
+	"description_fa"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+DROP TABLE IF EXISTS "stations_accessibility_wheelchair_levels";
+CREATE TABLE "stations_accessibility_wheelchair_levels" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"description_en"	TEXT NOT NULL,
+	"description_fa"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+DROP TABLE IF EXISTS "stations_wc_availability_levels";
+CREATE TABLE "stations_wc_availability_levels" (
+	"id"	INTEGER NOT NULL UNIQUE,
+	"description_en"	TEXT NOT NULL,
+	"description_fa"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+INSERT INTO "information" VALUES (1,2022,2,25);
 INSERT INTO "intersections" VALUES (1,42,127);
 INSERT INTO "intersections" VALUES (2,91,126);
 INSERT INTO "intersections" VALUES (3,34,117);
@@ -102,17 +91,17 @@ INSERT INTO "intersections" VALUES (14,26,89);
 INSERT INTO "intersections" VALUES (15,11,78);
 INSERT INTO "intersections" VALUES (16,27,45);
 INSERT INTO "intersections" VALUES (17,109,134);
-INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (1,'Not wheelchair accessible','با ویلچر قابل دسترسی نیست');
-INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (2,'Elevator from street to one platform','آسانسور از سطح خیابان به یک سکو');
-INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (3,'Elevator from street to both platforms','آسانسور از سطح خیابان به هر دو سکو');
-INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (4,'Elevator from ticket sales hall to platform','آسانسور از سالن فروش بلیت به سکو');
-INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (5,'Elevator from street to ticket sales hall & from ticket sales hall to platform','آسانسور از سطح خیابان به سالن فروش بلیت و از سالن فروش بلیت به سکو');
-INSERT INTO "stations_accessibility_blindness_levels" VALUES (1,'Not accessible to the visually impaired','فاقد مسیر نابینایان');
-INSERT INTO "stations_accessibility_blindness_levels" VALUES (2,'Accessible to the visually impaired on platforms only','دارای مسیر نابینایان در سکو‌ها');
-INSERT INTO "stations_accessibility_blindness_levels" VALUES (3,'Accessible to the visually impaired','دارای مسیر نابینایان در تمام ایستگاه');
-INSERT INTO "stations_wc_availability_levels" VALUES (1,'Rest room not available','فاقد سرویس بهداشتی');
-INSERT INTO "stations_wc_availability_levels" VALUES (2,'Rest room available close to the station','دارای سرویس بهداشتی در کنار ایستگاه');
-INSERT INTO "stations_wc_availability_levels" VALUES (3,'Rest room available just outside the station','دارای سرویس بهداشتی در محوطه بیرونی ایستگاه');
+INSERT INTO "line_types" VALUES (1,'Metro Line');
+INSERT INTO "line_types" VALUES (2,'Metro Branch');
+INSERT INTO "lines" VALUES (1,'one','یک','C53642',1);
+INSERT INTO "lines" VALUES (2,'two','دو','30577F',1);
+INSERT INTO "lines" VALUES (3,'three','سه','59A7C2',1);
+INSERT INTO "lines" VALUES (4,'four','چهار','E2C21D',1);
+INSERT INTO "lines" VALUES (5,'five','پنج','1A796B',1);
+INSERT INTO "lines" VALUES (6,'six','شش','F677AA',1);
+INSERT INTO "lines" VALUES (7,'seven','هفت','7C4078',1);
+INSERT INTO "lines" VALUES (101,'one','یک','C53642',2);
+INSERT INTO "lines" VALUES (104,'four','چهار','E2C21D',2);
 INSERT INTO "stations" VALUES (1,'Forudgah-e Emam Khomeini','فرودگاه امام خمینی',101,2,NULL,NULL,NULL,NULL,0,5,3,1);
 INSERT INTO "stations" VALUES (2,'Tajrish','تجریش',1,0,NULL,NULL,NULL,NULL,0,1,2,1);
 INSERT INTO "stations" VALUES (3,'Gheytarie','قیطریه',1,1,NULL,NULL,NULL,NULL,0,1,2,1);
@@ -257,4 +246,15 @@ INSERT INTO "stations" VALUES (141,'Modafean-e Salamat','مدافعان سلام
 INSERT INTO "stations" VALUES (142,'Meydan-e Ghiyam','میدان قیام',7,13,NULL,NULL,NULL,NULL,0,1,3,1);
 INSERT INTO "stations" VALUES (143,'Chehel Tan-e Doulab','چهل تن دولاب',7,14,NULL,NULL,NULL,NULL,0,1,3,1);
 INSERT INTO "stations" VALUES (144,'Ahang','آهنگ',7,15,NULL,NULL,NULL,NULL,0,1,3,1);
+INSERT INTO "stations_accessibility_blindness_levels" VALUES (1,'Not accessible to the visually impaired','فاقد مسیر نابینایان');
+INSERT INTO "stations_accessibility_blindness_levels" VALUES (2,'Accessible to the visually impaired on platforms only','دارای مسیر نابینایان در سکو‌ها');
+INSERT INTO "stations_accessibility_blindness_levels" VALUES (3,'Accessible to the visually impaired','دارای مسیر نابینایان در تمام ایستگاه');
+INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (1,'Not wheelchair accessible','با ویلچر قابل دسترسی نیست');
+INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (2,'Elevator from street to one platform','آسانسور از سطح خیابان به یک سکو');
+INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (3,'Elevator from street to both platforms','آسانسور از سطح خیابان به هر دو سکو');
+INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (4,'Elevator from ticket sales hall to platform','آسانسور از سالن فروش بلیت به سکو');
+INSERT INTO "stations_accessibility_wheelchair_levels" VALUES (5,'Elevator from street to ticket sales hall & from ticket sales hall to platform','آسانسور از سطح خیابان به سالن فروش بلیت و از سالن فروش بلیت به سکو');
+INSERT INTO "stations_wc_availability_levels" VALUES (1,'Restroom not available','فاقد سرویس بهداشتی');
+INSERT INTO "stations_wc_availability_levels" VALUES (2,'Restroom available close to the station','دارای سرویس بهداشتی در کنار ایستگاه');
+INSERT INTO "stations_wc_availability_levels" VALUES (3,'Restroom available just outside the station','دارای سرویس بهداشتی در محوطه بیرونی ایستگاه');
 COMMIT;
